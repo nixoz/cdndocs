@@ -1,0 +1,21 @@
+{
+    "routes": [
+      {
+        "title": "Documentation",
+        "heading": true,
+        "routes": [
+          { "title": "Introduction", "path": "/intro.md" },
+          { "title": "Getting Started", "path": "/getting-started.md" },
+          {
+            "title": "Properties",
+            "routes": [
+              {
+                "title": "Introduction",
+                "path": "/properties/adding_origins.md"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
