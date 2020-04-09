@@ -1,0 +1,573 @@
+﻿/*<meta />*/
+
+/*===========================================================================================================================================================
+
+Hello! If this is your first time looking at a stylesheet within the text editor view, what you are reading right now is a "comment". Comments are added throughout this stylesheet with the purpose of making the source code easier to understand, comments will not be interpreted during the compile process. Since comments are not interpreted during the compile process, feel free to add or remove any comments.
+
+For help with MadCap Flare go to Help Ribbon > Topics Section > Open Help. Alternatively visit the Flare Online Help at help.madcapsoftware.com
+
+If you have any questions regarding how to work with this stylesheet or template project, please contact MadCap Technical Support. 
+https://www.madcapsoftware.com/support/contact-options.aspx
+
+NOTE: Generally, this stylesheet has elements listed out in the order that they appear in the topic from top to bottom. The exception are General styles which are at the top and the stylesheet mediums which are at the bottom.
+
+EXAMPLE: Since the Topic/Banner image is at the top of the home page, it will be listed closer to the top of this stylesheet. While, the footer will be written towards the bottom. 
+
+===========================================================================================================================================================*/
+
+/* Home Page General Styles*/
+
+body
+{
+	font-family: Arial;
+	line-height: 1.5em;
+}
+
+h1
+{
+	text-align: center;
+	font-weight: normal;
+	color: #ffffff;
+	font-family: 'Trebuchet MS';
+	font-size: 5em;
+	line-height:1em;
+}
+
+h2
+{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: normal;
+	color: #FFFFFF;
+	padding-bottom: 10px;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+img	/*Setting max-width: 100%; property makes images always fit the width of the container*/
+{
+	max-width: 100%;
+}
+
+span.highlight1	/*Span class used to change the color of text within block elements*/
+{
+	color: #d393de;
+}
+
+span.highlight2
+{
+	color: #955aa4;
+}
+
+span.highlight3
+{
+	color: #32a14f;
+}
+
+span.highlight4	
+{
+	color: #f2774b;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.off-canvas-content .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/*==Mad Cap proxy/editor assigned styles==*/
+
+MadCap|searchBarProxy
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+	width: 50%;
+}
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+html.home-page
+{
+	mc-community-features: disabled;
+}
+
+/*==Home Page Hero Section==*/
+
+div.topic-hero	/*This is the Hero/Banner on the Home Page - To replace the banner image with your own, change background-image property*/
+{
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #1D2B64;
+	background: -webkit-linear-gradient(left top, #1D2B64, #4e4376);
+	background: -o-linear-gradient(bottom right, #1D2B64, #4e4376);
+	background: -moz-linear-gradient(bottom right, #1D2B64, #4e4376);
+	background: linear-gradient(to bottom right, #1D2B64, #4e4376);
+	border-top: 4px solid #f1f1f1;
+	border-bottom: 4px solid #f1f1f1;
+}
+
+/*==Home Tiles section==*/
+
+div.home-tiles-container
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+div.home-tiles	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles img	/*Complex Selector images included in the home-tiles will have a minimum width of 100%;*/
+{
+	min-width: 100%;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	overflow: hidden;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background-color: #f1f1f1;
+}
+
+div.home-tiles > div:hover
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 22%;
+	margin-left: 16%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 22%;
+	margin-left: 1%;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 22%;
+	margin-left: 1%;
+}
+
+div.home-tiles a	/*Properties for links in home-tiles*/
+{
+	color: #c7c7c7;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.home-tiles a:hover
+{
+	color: #1D2B64;
+}
+
+p.tile-title
+{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 1.5em;
+}
+
+/*==Search-bar==*/
+
+div.search-bar
+{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+/*==Info section==*/
+
+div.info-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	padding-bottom: 25px;
+}
+
+div.info-section	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.info-section::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.info-section::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.info-section > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 40px;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.info-section > div:hover
+{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+	background-color: #FFF;
+}
+
+div.info-section > div:nth-child(1)
+{
+	width: 24%;
+	margin-left: 11%;
+}
+
+div.info-section > div:nth-child(2)
+{
+	width: 24%;
+	margin-left: 2%;
+	border-left: 1px solid #ececec;
+	border-right: 1px solid #ececec;
+}
+
+div.info-section > div:nth-child(3)
+{
+	width: 24%;
+	margin-left: 2%;
+}
+
+p.in a
+{
+	text-decoration: none;
+}
+
+/*=Elements for content contained within each info section=*/
+
+p.info-title
+{
+	line-height: 1em;
+	font-size: 1.8em;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+p.info-title a /*Any hyperlinks included in info-title will have the following properties*/
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+p.info-content
+{
+	font-size: 0.9em;
+}
+
+a.home-button
+{
+	display: inline-block;
+	background-color: #818181;
+	padding: 7px 10px;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.2s;
+}
+
+a.home-button:hover
+{
+	background-color: #4e4376;
+}
+
+/*==Home Page Footer==*/
+
+div.footer
+{
+	padding-top: 13px;
+	padding-bottom: 10px;
+	background-color: #e6e6e6;
+	background: -webkit-linear-gradient(to bottom right, white, #d2d2d2);
+	background: -o-linear-gradient(to bottom right, white, #d2d2d2);
+	background: -moz-linear-gradient(to bottom right, white, #d2d2d2);
+	background: linear-gradient(to bottom right, white, #d2d2d2);
+	border-top: 4px solid #f1f1f1;
+}
+
+div.footer a
+{
+	text-decoration: none;
+	color: #DADADA;
+}
+
+div.footer p	/* Complex Selector: Any <p> that is contained within div.footer will have the following properties */
+{
+	font-size: 0.8em;
+	color: #b1b1b1;
+}
+
+div.home-master-page-footer	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	width: 55%;
+}
+
+div.home-master-page-footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-master-page-footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-master-page-footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.home-master-page-footer > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.home-master-page-footer > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.home-master-page-footer > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media tablet
+{
+	div.info-container
+	{
+		width: 100%;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 33%;
+		margin-left: 0.33%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 33%;
+		margin-left: 0.33%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 33%;
+		margin-left: 0.33%;
+	}
+
+	p.info-title
+	{
+		font-size: 1.5em;
+	}
+
+	div.footer
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	div.home-master-page-footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.home-master-page-footer > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.home-master-page-footer > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+}
+
+@media mobile
+{
+	div.home-tiles > div
+	{
+		margin-top: 2%;
+		background-color: #ececec;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	p.tile-title
+	{
+		font-size: 1.1em;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+	}
+
+	div.info-section > div:hover
+	{
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		box-shadow: none;
+		background-color: none;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	p.info-title
+	{
+		font-size: 2em;
+	}
+
+	p.info-content
+	{
+		font-size: 1em;
+	}
+
+	div.home-master-page-footer > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.home-master-page-footer > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.home-master-page-footer > div:nth-child(3)
+	{
+		width: 100%;
+	}
+}

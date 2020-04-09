@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Editing Origins</h1>
+        <p>Origins are your web servers that CDN360 accesses to fetch your content. A property origin can be edited only if the property has not been deployed to production. If you need to update a deployed property, either <a href="../Properties/Undeploying a property.htm">undeploy</a> the property or <a href="../Properties/creating_a_property.htm">create</a> a new property version.</p>
+        <ol>
+            <li>In the left pane, click <b>Properties</b>.</li>
+            <li><span style="font-weight: normal;">On the Properties page</span><span style="font-weight: normal;">, click the ID of the property whose origin you want to edit.</span>
+                <br />
+                <br /><u style="font-weight: normal;">OR</u>
+                <br />
+                <br /><span style="font-weight: normal;">Click the </span><b>Actions</b><span style="font-weight: normal;"> menu for the property whose origin you want to edit, and then select </span><b>Edit</b>.</li>
+            <li>Next to the <b>Version Number</b> field, click the <b>Edit</b> button. If this button is disabled, it means the version has been deployed to production.</li>
+        </ol>
+        <p style="text-align: center;">
+            <img src="../Resources/Images/Property - Edit Origins.png" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-thumbnail-max-height: 400px;mc-thumbnail: popup;" />
+        </p>
+        <p style="text-align: center;"><span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+        </p>
+        <ol MadCap:continue="true">
+            <li>In the <b>Origins</b> field, click the <b>Edit</b> link for the origin you want to edit.</li>
+        </ol>
+        <p style="text-align: center;">
+            <img src="../Resources/Images/Viewing Origins-3.png" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-thumbnail: popup;mc-thumbnail-max-height: 400px;" />
+        </p>
+        <p style="text-align: center;"><span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+        </p>
+        <p>&#160;</p>
+        <p>5. Make your changes in the Edit Origin form. Required fields are denoted by an asterisk (*).</p>
+        <p style="text-align: center;">
+            <img src="../Resources/Images/Edit Origin Page.png" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-thumbnail: popup;mc-thumbnail-max-height: 400px;" />
+        </p>
+        <p style="text-align: center;"><span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+        </p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Rows.css');width: 100%;border-top-left-radius: 1px;border-top-right-radius: 1px;border-bottom-right-radius: 1px;border-bottom-left-radius: 1px;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-Rows" cellspacing="0">
+            <caption>&#160;</caption>
+            <col style="width: 359px;" class="TableStyle-Rows-Column-Column1" />
+            <col style="width: 780px;" class="TableStyle-Rows-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Rows-Head-Header1">
+                    <th class="TableStyle-Rows-HeadE-Column1-Header1"><b>Fields</b>
+                    </th>
+                    <th class="TableStyle-Rows-HeadD-Column1-Header1"><b>Description</b>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p class="Cellbody">Origin Name</p>
+                    </td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p class="Cellbody">To manually enter an origin name, enter it in this field. </p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Servers</td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p class="Cellbody">Enter a hostname or IP&#160;address of the primary HTTP or HTTPS server from which CDN360 is expected to retrieve your content. After entering the server hostname or IP address, click Validate to verify that the server information is correct and reachable. </p>
+                        <p class="Cellbody">To add more servers, click the Add new + link. To remove a server, click the Remove link.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Backup Servers</td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p class="Cellbody">Enter a hostname or IP&#160;address of the backup HTTP or HTTPS server that&#160;CDN360 will query for content if the primary server is not available. When requests are made, CDN360 queries the primary server(s) you specified in your configuration. If the primary server(s) are down, CDN360 will query the backup servers for the requested information.</p>
+                        <p>Click Add new + to specify the backup server, and then click Validate to verify. To add more backup servers, click the Add new + link again. To remove a backup server, click the Remove link.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;" colspan="2"><b>Advanced Settings</b>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Supported Protocol</td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Select the protocol that your origin server supports. Choices are:<ul><li style="font-style: normal;">HTTP = use HTTP&#160;only.</li><li>HTTPS = use HTTPS&#160;only.</li><li><p style="font-style: normal;">Both = use HTTP&#160;and HTTPS.</p></li></ul></td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Support SNI</td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p class="Cellbody">Select whether your server supports Server Name Indication (SNI). Choices are:</p>
+                        <ul>
+                            <li style="font-style: normal;">True = server supports SNI.</li>
+                            <li style="font-style: normal;">False = server does not support SNI.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Verify Origin</td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p class="Cellbody">Select whether CDN360 performs backend verification of the TLS certificate on the origin servers. Choices are:</p>
+                        <ul>
+                            <li>True = perform backend verification. </li>
+                            <li style="font-style: normal;">False = do not perform backend verification.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Host Header</td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Enter a hostname that CDN will use to contact the origin.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">Direct Connection</td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p class="Cellbody">There may be times CDN servers fetch content from the origin server. This option allows CDN360 to search other CDN360 servers where the content is cached. Choices are:</p>
+                        <ul>
+                            <li>No Direct = always try a parent cache first to fetch missing content.</li>
+                            <li>Auto = CDN360 cache server uses resource- and performance-based metrics to decide whether to go to the origin directly or to a parent cache.</li>
+                            <li>Always Direct = select this option if you want CDN360 to always go directly to the origin server to fetch content.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyH-Column1-" style="border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;padding-top: 0px;">Authentication</td>
+                    <td class="TableStyle-Rows-BodyG-Column1-" style="border-bottom-style: solid;border-bottom-width: 0px;padding-top: 0px;">Enables authentication for Amazon Web Services (AWS) S3 servers. Choices are:</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="TableStyle-Rows-BodyB-Column1-" style="border-bottom-style: solid;border-bottom-width: 1px;">&#160;</td>
+                    <td class="TableStyle-Rows-BodyA-Column1-" style="border-bottom-style: solid;border-bottom-width: 0px;padding-top: 0px;">
+                        <ul>
+                            <li>None = no authentication. </li>
+                            <li>AWS&#160;S3 = enables authentication for AWS&#160;S3 servers. If you select this choice, complete the following fields:<ul><li>Region = select a <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">region</a> from the drop-down list.</li><li>Access Key = enter the AWS&#160;access key used to authenticate requests  on the AWS&#160;server.</li><li>Secret Key = enter the AWS&#160;secret key  used to authenticate requests on the AWS&#160;server.</li></ul></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>6. Click <b>Edit Origin</b> to save your updated configuration.</p>
+        <p>7. Click <b>Save &amp; Validate</b> followed by <b>OK</b>. The Configuration Validated screen shows the validation progress.</p>
+        <p>8. When a check mark appears at the end of the progress bar on the Configuration Validated screen, click <b>Go to Dashboard</b>.</p>
+    </body>
+</html>

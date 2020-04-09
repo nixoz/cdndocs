@@ -1,0 +1,30 @@
+/*<meta />*/
+
+p.MyStyle
+{
+	font-family: Arial;
+	font-size: 12pt;
+	margin: 0px;
+}
+
+img
+{
+	border: none;
+}
+
+a.Popup
+{
+	
+}
+
+li
+{
+	line-height: 14pt;
+}
+
+p
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: 200px;
+}
+
