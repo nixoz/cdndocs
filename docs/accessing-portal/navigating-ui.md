@@ -1,7 +1,3 @@
-<!--?xml version="1.0" encoding="utf-8"?-->
-
-<link href="" rel="stylesheet" type="text/css">
-
 # Navigating the CDN360 User Interface
 
 After you sign up for a CDN360 account, you will have access to the CDN360 documentation and online help.
@@ -17,7 +13,6 @@ The default menu lists the CDN360 activities you can perform.
 The dashboard is the default page that appears when you log in to the CDN360 portal. It contains charts that show a snapshot of your account traffic over a recent period of time. For detailed information, hover your mouse over the data entry points. For example:
 
 ![null](<../Resources/Images/Total Bandwidth.png>)
-
 <span style="color: #708090; font-size: 10pt;">(click to enlarge)</span>
 
 From the dashboard, you can view:

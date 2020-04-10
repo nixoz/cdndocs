@@ -16,6 +16,10 @@
               {
                 "title": "Forgot Password",
                 "path": "/docs/accessing-portal/forgot-password.md"
+              },
+              {
+                "title": "Navigating UI",
+                "path": "/docs/accessing-portal/navigating-ui.md"
               }
             ]
           },
@@ -89,7 +93,25 @@
               }
             ]
           },
-          { "title": "Reports", "path": "/docs/reports.md" }
+          { "title": "Reports", "path": "/docs/reports.md" },
+          { "title": "Content Management", "path": "/docs/content-management.md" },
+          {
+            "title": "Identities and Access",
+            "routes": [
+              {
+                "title": "Overview",
+                "path": "/docs/identities-and-access/managing-cnames.md"
+              },
+              {
+                "title": "Managing Roles",
+                "path": "/docs/identities-and-access/managing-roles.md"
+              },
+              {
+                "title": "Managing Users",
+                "path": "/docs/identities-and-access/managing-users.md"
+              }
+            ]
+          }
         ]
       }
     ]
