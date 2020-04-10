@@ -14,14 +14,6 @@ There are multiple ways to send test traffic to the staging environment:
 
  option can be used to directly map the hostname to be accelerated to the IP address of the CDN360 staging server(s).
 
-```jsx
-function About() {
-  return <div>About</div>
-}
-
-export default About
-```
-
 To ascertain the IP address of the staging cache servers, issue the following ```dig``` command from a Linux terminal:
 
 ```bash
@@ -35,6 +27,3 @@ After you create a CNAME and set your DNS server to point the CNAME to your prop
 
 1. Modify your DNS server to point your hostname to a [CNAME you created](<../CNAMEs/Creating a CNAME.htm>) for the property.
 2. After the DNS change has propagated, access your content through the hostname using your browser or scripts.
-
-<!-- -->
-
