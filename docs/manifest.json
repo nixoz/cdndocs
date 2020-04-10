@@ -128,7 +128,8 @@
                 "path": "/docs/identities-and-access/managing-users.md"
               }
             ]
-          }
+          },
+          { "title": "FAQ", "path": "/docs/faq.md" }
         ]
       }
     ]
