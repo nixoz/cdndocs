@@ -1,10 +1,4 @@
-<!--?xml version="1.0" encoding="utf-8"?-->
-
-<link href="" rel="stylesheet" type="text/css">
-
 # Welcome to CDN360
-
-
 
 CDN360 leads the evolution of content delivery networks (CDNs) by accelerating, securing, scaling, and delivering content to website visitors worldwide, regardless of their location. With points of presence on every continent, visitor requests are routed to edge servers based on factors such as proximity and resource/content availability.
 
@@ -14,8 +8,6 @@ By keeping content close to requesting website visitors, utilizing intelligent r
 - Slashes Time-To-First-Byte (TTFB) latencies.
 - Achieves superior SEO and bounce-rate reduction.
 - Improves user experiences.
-
-<!-- -->
 
 ## CDN360 Key Features
 
@@ -27,8 +19,6 @@ By keeping content close to requesting website visitors, utilizing intelligent r
 - High-level view of your network traffic and site performance can be viewed and printed as a customized report for analysis.
 - Support for reaching customers in mainland China. (CDNetworks can also help to secure all necessary permissions and licenses.)
 
-<!-- -->
-
 ## CDN360 Graphical User Interface (GUI)
 
 The CDN360 content delivery platform makes it easy for anyone with a minimum CDN background to get started, yet is sufficiently powerful for advanced users as well.
@@ -39,8 +29,6 @@ The platform's customizable point-and-click user interface provides granular con
 - Choosing the best way to fetch content from the origin and deciding where to store it on CDN360 servers.
 - Customizing global traffic management rules and selecting advanced settings for any CNAME you create.
 - Testing behaviors in a dedicated staging environment and then deploying to production — in minutes! 
-
-<!-- -->
 
 ## CDN360 Application Programming Interface (API)
 

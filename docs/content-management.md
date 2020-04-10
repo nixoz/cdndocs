@@ -2,26 +2,17 @@
 
 CDN360 supports a content management purge function that allows you to override the cache time. This feature is handy when the content on your web server has changed and you want CDN360 to update its servers with your changes. For example, if your website has a cache time of one week, but you want your website visitors to see a new update to one of your pages, you can use the purge option to flush the cache and enable your visitors to view the new content.
 
-
 Content management purge activities are performed from the Content Management page. To display this page, click **Content Management** in the left pane.
 
 The following figure shows the key elements on the page, and the table following the figure describes them.
 
 ![null](<../Resources/Images/Content Management.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
-
 # Purge
 
 Using the content management purge functionality you can override the cache time. If your website has a cache time of one (1) week but there is a new update to one of your pages and you want your website visitors to see the latest copy, you can use the purge option to flush the cache.
 
 You should request purges when the content on your web server has changed and you want CDN360 to update its servers with your changes.
-
-<!--?xml version="1.0" encoding="utf-8"?-->
-
-<link href="../Resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
-
 
 ## Creating a Purge Request
 
@@ -31,13 +22,10 @@ If the content on your origin web server has changed, request a purge to have CD
 2. At the top right of the page, click the **Create Purge** button. 
 3. Complete the fields in the Purge form. Required fields are denoted by an asterisk (\*). The top of the form shows the percentage of the daily purge quota that has been used.
 
-<!-- -->
-
 ![null](<../Resources/Images/Purge Form.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
 
-| **Fields**                                                                                                                                                                                                                                                                                                 | **Description**                                                                                                                                                                                                                                                                                            |
+|**Fields**|**Description**|
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Target Environment                                                                                                                                                                                                                                                                                         | Select whether the purge will occur in a staging or production environment.                                                                                                                                                                                                                                |
 | Purge Action                                                                                                                                                                                                                                                                                               | Select whether you want the content deleted or invalidated.                                                                                                                                                                                                                                                |
