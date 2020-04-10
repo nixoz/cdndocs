@@ -14,7 +14,13 @@ There are multiple ways to send test traffic to the staging environment:
 
  option can be used to directly map the hostname to be accelerated to the IP address of the CDN360 staging server(s).
 
-<!-- -->
+```jsx
+function About() {
+  return <div>About</div>
+}
+
+export default About
+```
 
 To ascertain the IP address of the staging cache servers, issue the following ```dig``` command from a Linux terminal:
 
