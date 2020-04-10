@@ -11,7 +11,7 @@ To create a property, complete the Create a Property form with your server and c
 
 ![null](<../Resources/Images/Create a Property.png>)
 
-| **Fields**| **Description**|
+| **Fields** | **Description** |
 | Property Name | Enter a name that helps you identify this property.|
 | Description | Add a description to associate with this property.|
 | Configuration Version | Read-only field that shows the version number of this property. By default, your first property configuration is Version 1.|

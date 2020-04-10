@@ -1,5 +1,3 @@
-<!--?xml version="1.0" encoding="utf-8"?-->
-
 # Certificate Types
 
 CDN360 supports the following certificates:
@@ -14,19 +12,11 @@ All certificates are versioned in CDN360. Once a version is saved, it cannot be 
 1. In the left pane, click **Certificates**.
 2. At the top right of the Certificates page, click the **Create New Certificate +** button.
 
-<!-- -->
-
 ![null](<../Resources/Images/Certificate - Edit Button.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
-1. Complete the fields in the Create Certificate form. Required fields are denoted by an asterisk (\*).
-
-<!-- -->
+3. Complete the fields in the Create Certificate form. Required fields are denoted by an asterisk (\*).
 
 ![null](<../Resources/Images/Create Version Button - Updating properties.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
 
 | **Fields**                                                                                                                     | **Description**                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -52,13 +42,8 @@ All certificates are versioned in CDN360. Once a version is saved, it cannot be 
 | Email                                                                                                                          | Enter an email address.                                                                                                        |
 | Comments                                                                                                                       | Enter comments about the certificate.                                                                                          |
 
-7. When finished, click the **Save Certificate** button and confirm that you want to update this certificate.
+4. When finished, click the **Save Certificate** button and confirm that you want to update this certificate.
 
-<!-- -->
-
-<!--?xml version="1.0" encoding="utf-8"?-->
-
-<link href="../Resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
 
 # Auto-Generating a Self-Signed Certificate 
 
@@ -121,26 +106,16 @@ If you have a certificate with the private key and the CA chain certificate, you
 - Privacy Enhanced Mail (PEM) format.
 - Plain text and begin with five equal signs (=====).
 
-<!-- -->
-
 To upload the files as a new certificate:
 
 1. In the left pane, click **Certificates**.
 2. At the top right, click the **Create New Certificate** button. 
 
-<!-- -->
-
 ![null](<../Resources/Images/Create new Certificate Button.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
-1. Complete the fields in the Create Certificate form and **Upload Certificate** tab. Required fields are denoted by an asterisk (\*).
-
-<!-- -->
+3. Complete the fields in the Create Certificate form and **Upload Certificate** tab. Required fields are denoted by an asterisk (\*).
 
 ![null](<../Resources/Images/Upload Certificate.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
 
 | **Fields**                                                                                                                     | **Description**                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -154,15 +129,9 @@ To upload the files as a new certificate:
 | Chain Certificate                                                                                                              | Click Upload, browse to the signed key you obtained from your CA, and then select it.                                          |
 | Comments                                                                                                                       | Enter comments about the certificate.                                                                                          |
 
-1. Click the **Save Certificate **button followed by **OK**. 
-
-<!-- -->
+4. Click the **Save Certificate **button followed by **OK**. 
 
 Your certificate is saved and can now be used with any properties you create.
-
-<!--?xml version="1.0" encoding="utf-8"?-->
-
-<link href="../Resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
 
 # Updating Expiring Certificates
 
@@ -173,48 +142,28 @@ An expired certificate causes browsers to stop loading web content and display a
 1. In the left pane, click **Certificates**.
 2. On the Certificates page, click the name of the certificate that is expiring. When the certificate details form appears, perform the appropriate step:
 
-<!-- -->
-
 - If you already have a new CA-signed version with a private key and chain certificate, proceed to step 3.
 - Otherwise, skip to step 5 to apply for a new version from a CA.
 
-<!-- -->
-
 1. In the certificate details form, click **Create Version**.
-
-
-<!-- -->
 
 ![null](<../Resources/Images/Create Version.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
 1. In the **Upload Certificate** tab, upload the private key, certificate, and chain certificate files. Then click **Save Version** and skip to step 13.
 
-
-<!-- -->
-
 ![null](<../Resources/Images/Buttons for Uploading Certs.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
 
 1. Use one of the following steps to apply for a new version from a CA:
 
     -  To use a new key (for example, if your company has a security policy that disallows reuse of an old private key), proceed to step 6.
     - To reuse the existing private key, skip to step 8.
 
-    <!-- -->
-
 2. Click **Create Version**.
 
 3. Click the **Auto Generate Certificate** tab, complete the required fields, and click **Save Version**.
 
 
-<!-- -->
-
 ![null](<../Resources/Images/Auto Generate Certificate.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
 
 | **Fields**                                                                                                      | **Description**                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -237,16 +186,9 @@ An expired certificate causes browsers to stop loading web content and display a
 
 4. On the right side of the certificate details form, click the **Create Version** button.
 
-<!-- -->
-
 ![null](<../Resources/Images/Create Version Button - Updating properties.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
 1. On the **Upload Certificate** tab, upload the certificate and chain certificate, and then click **Save Version**.
-
-
-<!-- -->
 
 ![null](<../Resources/Images/Certificate Versions.png>)
 
@@ -254,27 +196,16 @@ An expired certificate causes browsers to stop loading web content and display a
 
 1. Deploy the new certificate version to production.
 
-
-<!-- -->
-
-<!--?xml version="1.0" encoding="utf-8"?-->
-
 # Viewing Certificate Details
 
 1.  In the left pane, click **Certificates**.
 2. Click the **“+”** icon next to the certificate name. For example:
-
-<!-- -->
 
 ![null](<../Resources/Images/view_edit.png>)
 
 <span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
 
 1. To remove the details. click the "**–**" icon next to the certificate name.
-
-<!-- -->
-
-<!--?xml version="1.0" encoding="utf-8"?-->
 
 # Deploying and Undeploying Certificates
 
@@ -283,7 +214,6 @@ After you create a certificate, you can [deploy](<Deploying Certificates.htm>) i
 **Important**: You must deploy the certificate for a property to use it.
 
 If you decide not to use a deployed certificate, you can [undeploy](<Undeploying Certificates.htm>) it from the staging and production environments.
-
 
 ## Deploying Certificates
 
@@ -297,17 +227,11 @@ After you create a certificate, you can deploy it to the staging environment whe
 2. On the Certificates page, click the name of the certificate you want to deploy.
 3. Scroll down to the **Deployment** section, and then select **Staging** or **Production** from the **Deployment Destination** drop-down list.
 
-<!-- -->
-
 ![null](<../Resources/Images/Selecting a Deployment Options.png>)
 
 <span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
 
 1. Click the **Deploy Configuration** button. When the Deployment Confirmation pop-up appears, click **OK**. Wait for the message that the certificate has been successfully deployed, or click the **Go to Dashboard** button to perform other tasks while deployment continues in the background, and then click **Tasks** in the left pane to confirm that the certificate was deployed successfully.
-
-<!-- -->
-
-<!--?xml version="1.0" encoding="utf-8"?-->
 
 ## Undeploying Certificates
 
@@ -319,10 +243,6 @@ To undeploy a certificate from staging or production environments, the certifica
 2. On the Certificates page, click the **Actions** drop-down list for the certificate you want to undeploy, and then select **Undeploy from Staging** or **Undeploy from Production**.
 3. When the Undeployment Confirmation dialog box appears, click **OK**.
 
-<!-- -->
-
-<!--?xml version="1.0" encoding="utf-8"?-->
-
 # Deleting Certificates
 
 Deleting a certificate removes that certificate permanently.
@@ -331,12 +251,7 @@ Deleting a certificate removes that certificate permanently.
 
 1. In the left pane, click **Certificates**.
 2. On the Certificates page, click the **Actions **drop-down list of the certificate you want to delete, and then select **Delete**.
-
-<!-- -->
-
-4. When prompted to confirm the deletion, click **OK** to delete the certificate. 
-
-<!-- -->
+3. When prompted to confirm the deletion, click **OK** to delete the certificate. 
 
 # Downloading a CSR
 
@@ -347,6 +262,3 @@ A certificate signing request (CSR) is a file that contains information a certif
 1. In the left pane, click **Certificates**.
 2. On the Certificates page, click the **Actions** drop-down list for a certificate, and then select **Download CSR**.
 3. If prompted for a download location, browse to the location where you want to save the CSR, and then click **Save**.
-
-<!-- -->
-

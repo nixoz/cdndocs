@@ -22,13 +22,9 @@ From the dashboard, you can view:
 - Charts that summarize traffic bandwidth for all properties.
 - Charts of total property traffic volume.
 
-<!-- -->
-
 A legend below each chart shows the names of the data entry points in the chart. Clicking a data entry point in the legend removes that data entry point from the chart. Clicking it again redisplays the data entry point. Clicking **View Full Report** below a chart displays that chart on the [Reports page](<../Reports/Generating Reports.htm>), where you can define report parameters, and then view the results on the selected chart.
 
 ![null](<../Resources/Images/Traffic Volume.png>)
-
-<span style="color: #708090; font-size: 10pt;">(click to enlarge)</span>
 
 ## Reports
 
@@ -37,8 +33,6 @@ The[ Reports page](<../Reports/Managing Reports.htm>) allows you to generate rep
 - Traffic volume and bandwidth on your domain.
 - Number of requests made to the files on your property.
 - Percentage of each HTTP status code returned as a result of requests to your content.
-
-<!-- -->
 
 ## Properties
 
@@ -59,4 +53,3 @@ The [Content Management page](<../Content Management/Overview.htm>) allows you t
 ## Tasks
 
 The [Tasks page](<../Tasks/Managing Tasks.htm>) shows your validation, deployment, and undeployment requests. This page also allows you to view properties submitted for validation, as well as deployment and undeployment history.
-

@@ -9,6 +9,3 @@ Certificates are managed from the Certificates page. To display this page, click
 The following figure shows the key elements on the page, and the table following the figure describes them.
 
 ![null](<../Resources/Images/Certificates Page.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
