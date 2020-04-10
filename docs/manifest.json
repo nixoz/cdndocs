@@ -88,7 +88,8 @@
                 "path": "/docs/cnames/deleting-cname.md"
               }
             ]
-          }
+          },
+          { "title": "Reports", "path": "/docs/reports.md" }
         ]
       }
     ]
