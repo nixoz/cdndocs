@@ -23,8 +23,16 @@
             "title": "Properties",
             "routes": [
               {
-                "title": "Introduction",
-                "path": "/docs/properties/adding_origins.md"
+                "title": "Managing Properties",
+                "path": "/docs/properties/managing-properties.md"
+              },
+              {
+                "title": "Creating a Property",
+                "path": "/docs/properties/creating-property.md"
+              },
+              {
+                "title": "Managing Origins",
+                "path": "/docs/properties/managing-origins.md"
               }
             ]
           },

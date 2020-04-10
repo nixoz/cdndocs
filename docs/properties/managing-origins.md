@@ -1,3 +1,10 @@
+
+<!--?xml version="1.0" encoding="utf-8"?-->
+
+# Managing Origins for Your Property
+
+Origins are your servers containing the content you want CDN360 to accelerate. Configuring origins allows CDN360 to communicate with your origin servers.
+
 <!--?xml version="1.0" encoding="utf-8"?-->
 
 <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
@@ -69,4 +76,105 @@ Origins are your web servers that CDN360 accesses to fetch your content. A prope
 7\. Click **Save & Validate** followed by **OK**. The Configuration Validated screen shows the validation progress.
 
 8\. When a check mark appears at the end of the progress bar on the Configuration Validated screen, click **Go to Dashboard**.
+
+<!--?xml version="1.0" encoding="utf-8"?-->
+
+# Removing Origins
+
+**Note**: You can remove property origins only if the origin has not been deployed to staging or production.
+
+1. In the left pane, click **Properties**.
+2. On the Properties page, click the ID of the property whose origin you want to remove. The Property form appears.
+
+<!-- -->
+
+1. At the right side of the **Version Number** field, click the **Edit **button.
+
+<!-- -->
+
+![null](<../Resources/Images/Property Page.png>)
+
+1. At the right side of the **Origins** field, click the **Remove** link. 
+
+<!-- -->
+
+![null](<../Resources/Images/Remove Link.png>)
+
+The Remove Origins dialog box appears.
+
+![null](<../Resources/Images/origins/origin7.png>)
+
+1. Click **Remove Origin** to remove this origin from your property.
+2. Exit the Property form.
+
+<!-- -->
+
+<!--?xml version="1.0" encoding="utf-8"?-->
+
+# Viewing and Editing Origins
+
+You can view the configuration details of your origins from the Properties section of CDN360.
+
+## Viewing Origins
+
+To view origin details, complete the following steps.
+
+1. Log in to the CDN360 portal and select the **Properties **link.
+2. Click the property you want to view. The property configuration page displays.
+3. Navigate to the Origins section, and click the **View **link. The View Origin details screen displays.
+
+<!-- -->
+
+![null](<../Resources/Images/origin_remove.png>)
+
+## Editing Origins
+
+**Note:** Your property origins can only be edited if the property has not been deployed to a staging or production environment. If you need to update a deployed property, you can create a new property version.
+
+To edit your origins, complete the following steps.
+
+1. Log in to the CDN360 portal and select the **Properties** link.
+2. Click the property you want to view. The Property configuration page displays.
+3. Click the **Edit** button. The Edit link now appears on the properties configuration page.
+
+<!-- -->
+
+> ![null](<../Resources/Images/origins/origin5.png>)
+
+4\. Click the **Edit** link. The Edit Origin form appears.
+
+![null](<../Resources/Images/origins/origin6.png>)
+
+5\. Make any origin configuration changes required, including adding additional origin servers.
+
+6\. Click **Edit Origin** to save your updated configuration.
+
+<!--?xml version="1.0" encoding="utf-8"?-->
+
+# Viewing Origins
+
+1. In the left pane, click **Properties**.
+2. On the Properties page, click the ID of the property whose origin you want to view.<br>
+
+<br>
+
+<u>OR</u>
+
+<br>
+
+<br>
+
+Click the **Actions** menu for the property whose origin you want to view, and then select **Edit**.
+3. In the **Origins** field, click the **View **link. <br>
+
+
+<!-- -->
+
+![null](<../Resources/Images/Page - View Origins.png>)
+
+<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+
+1. View the origin in the View Origin dialog box. When you finish viewing, click the **Close** button.
+
+<!-- -->
 
