@@ -7,23 +7,20 @@ Before you deploy your property to production, we recommend you test and verify 
 There are multiple ways to send test traffic to the staging environment:
 
 - Modify your DNS server to point your hostname to the CDN360 staging hostname staging.qtlgslb.com.
-
-<!-- -->
-
-- Modify the <span style="font-family: 'Courier New';">/etc/hosts</span>
+- Modify the ```/etc/hosts```
 
  file to hard code the hostname to be accelerated to one of the staging servers IP addresses. Refer to the CDN360 [API](<http://cdn360doc.quantil.com/apidocs/api.html>).
-- If the cURL command is used, the <span style="font-family: 'Courier New';">--resolve</span>
+- If the cURL command is used, the ```--resolve```
 
  option can be used to directly map the hostname to be accelerated to the IP address of the CDN360 staging server(s).
 
 <!-- -->
 
-To ascertain the IP address of the staging cache servers, issue the following <span style="font-family: 'Courier New';">dig</span>
+To ascertain the IP address of the staging cache servers, issue the following ```dig``` command from a Linux terminal:
 
- command from a Linux terminal:
-
+```bash
 $ dig staging.qtlgslb.com
+```
 
 
 # Testing Your Property In Production
