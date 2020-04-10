@@ -1,0 +1,67 @@
+# Managing Reports
+
+CDN360 provides reporting capabilities that allow you to analyze the traffic to your properties, identify trends over time, and pinpoint times when visitors are most likely to land on your site.
+
+### **Reports page**
+
+Reports are generated from the Reports page. To display this page, click **Reports** in the left pane.
+
+The following figure shows the key elements on the page.
+
+![null](<../resources/images/Report Page.png>)
+
+
+# Generating Reports
+
+1. In the left pane, click **Reports**. 
+2. Complete the fields in the Reports page:
+
+<!-- -->
+
+![null](<../resources/images/Report Page.png>)
+
+<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+
+| **Fields**                                                                                              | **Description**                                                                                         |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Report Type                                                                                             | Select the [type of report](<Understanding Report Types.htm>) you want to generate.                     |
+| Hostnames                                                                                               | Select one or more hostnames that you defined when you created your property.                           |
+| Date Range                                                                                              | Select the start and end dates and the time for the report.                                             |
+| Report Interval                                                                                         | Select the granularity of the returned data. Choices are:                                               |
+| Protocol                                                                                                | Select the protocol-based data traffic that will be covered by the report. Choices are:                 |
+| Report Range                                                                                            | If you are a reseller with child accounts, select the account that this report will cover. Choices are: |
+
+**Note:** All volume and bandwidth report data pertains to the HTTP payload only. It does not include the overhead from TCP, IP, and MAC headers. CDNetworks adds 4.56% (66 bytes) of overhead to each 1448-byte payload to generate the "billing volume" on the invoice.
+
+1. Click the **Generate Report** button to generate the report.
+2. After the report is generated, you can:
+
+<!-- -->
+
+- Mouse over data points in the report to view detailed information.
+- Drag over the chart to magnify areas, and then use the **Reset zoom** button to return to the default zoom level.
+- Use the **Download Options** button at the top-right of the report to download raw data in comma-separated-value (CSV) format.
+
+<!-- -->
+
+<!--?xml version="1.0" encoding="utf-8"?-->
+
+<link href="../resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
+
+# Understanding Report Types
+
+CDN360 provides reporting capabilities that allow you to analyze the traffic to your properties, identify trends over time, and pinpoint times when visitors are most likely to land on your site.
+
+The following report types are supported. You select a report type from the **Report Type** drop-down list on the Reports page.
+
+![null](<../resources/images/Report Type Drop-down List.png>)
+
+<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+
+| **Report**                                                                                                                                                                                                                                                                                                                               | **Description**                                                                                                                                                                                                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Traffic Volume                                                                                                                                                                                                                                                                                                                           | Shows edge versus origin traffic.                                                                                                                                                                                                                                                                                                        |
+| Traffic Bandwidth                                                                                                                                                                                                                                                                                                                        | Shows edge versus origin traffic bandwidth. Lines represent edge traffic from CDN360 servers, traffic from your origin servers, and cache hit rate. The vertical (Y) axis shows the bandwidth and hit ratio, while the horizontal (X) axis shows time. The cache hit rate is computed as (edge traffic - origin traffic) / edge traffic. |
+| Requests                                                                                                                                                                                                                                                                                                                                 | Shows requests made to the files of your property. Lines show the requests to CDN360 edge servers, requests to your origin servers, and cache hit rate. The cache hit rate is computed as (edge requests - origin requests)/edge requests.                                                                                               |
+| Status Code Details                                                                                                                                                                                                                                                                                                                      | Shows the percentage of HTTP status codes returned. For example, code 200 represents a successful request.                                                                                                                                                                                                                               |
+

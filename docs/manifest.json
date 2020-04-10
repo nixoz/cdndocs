@@ -1,25 +1,25 @@
 {
     "routes": [
+      { "title": "Introduction", "path": "/docs/intro.md" },
+      { "title": "Getting Started", "path": "/docs/intro.md" },
       {
-        "title": "Documentation",
+        "title": "Portal",
         "heading": true,
         "routes": [
-          { "title": "Introduction", "path": "/docs/intro.md" },
-          { "title": "Getting Started", "path": "/docs/getting-started.md" },
           {
             "title": "Accessing Portal",
             "routes": [
               {
                 "title": "Logging-In",
-                "path": "/docs/accessing-portal/logging-in.md"
+                "path": "/docs/portal/accessing-portal/logging-in.md"
               },
               {
                 "title": "Forgot Password",
-                "path": "/docs/accessing-portal/forgot-password.md"
+                "path": "/docs/portal/accessing-portal/forgot-password.md"
               },
               {
                 "title": "Navigating UI",
-                "path": "/docs/accessing-portal/navigating-ui.md"
+                "path": "/docs/portal/accessing-portal/navigating-ui.md"
               }
             ]
           },
@@ -28,47 +28,47 @@
             "routes": [
               {
                 "title": "Managing Properties",
-                "path": "/docs/properties/managing-properties.md"
+                "path": "/docs/portal/properties/managing-properties.md"
               },
               {
                 "title": "Creating a Property",
-                "path": "/docs/properties/creating-property.md"
+                "path": "/docs/portal/properties/creating-property.md"
               },
               {
                 "title": "Managing Origins",
-                "path": "/docs/properties/managing-origins.md"
+                "path": "/docs/portal/properties/managing-origins.md"
               },
               {
                 "title": "Deploying a Property",
-                "path": "/docs/properties/deploying-property.md"
+                "path": "/docs/portal/properties/deploying-property.md"
               },
               {
                 "title": "Testing a Property",
-                "path": "/docs/properties/testing-property.md"
+                "path": "/docs/portal/properties/testing-property.md"
               },
               {
                 "title": "Undeploying a Property",
-                "path": "/docs/properties/undeploying-property.md"
+                "path": "/docs/portal/properties/undeploying-property.md"
               },
               {
                 "title": "Editing Properties",
-                "path": "/docs/properties/editing-properties.md"
+                "path": "/docs/portal/properties/editing-properties.md"
               },
               {
                 "title": "Cloning Properties",
-                "path": "/docs/properties/cloning-property.md"
+                "path": "/docs/portal/properties/cloning-property.md"
               },
               {
                 "title": "Validating Properties",
-                "path": "/docs/properties/validating-property.md"
+                "path": "/docs/portal/properties/validating-property.md"
               },
               {
                 "title": "Comparing Property Versions",
-                "path": "/docs/properties/comparing-properties.md"
+                "path": "/docs/portal/properties/comparing-properties.md"
               },
               {
                 "title": "Deleting Property",
-                "path": "/docs/properties/deleting-property.md"
+                "path": "/docs/portal/properties/deleting-property.md"
               }
             ]
           },
@@ -77,19 +77,19 @@
             "routes": [
               {
                 "title": "Managing CNAMEs",
-                "path": "/docs/cnames/managing-cnames.md"
+                "path": "/docs/portal/cnames/managing-cnames.md"
               },
               {
                 "title": "Creating a CNAME",
-                "path": "/docs/cnames/creating-cname.md"
+                "path": "/docs/portal/cnames/creating-cname.md"
               },
               {
                 "title": "Editing a CNAME",
-                "path": "/docs/cnames/editing-cname.md"
+                "path": "/docs/portal/cnames/editing-cname.md"
               },
               {
                 "title": "Deleting a CNAME",
-                "path": "/docs/cnames/deleting-cname.md"
+                "path": "/docs/portal/cnames/deleting-cname.md"
               }
             ]
           },
@@ -98,38 +98,45 @@
             "routes": [
               {
                 "title": "Overview",
-                "path": "/docs/certificates/overview.md"
+                "path": "/docs/portal/certificates/overview.md"
               },
               {
                 "title": "Managing Certificates",
-                "path": "/docs/certificates/managing-certificates.md"
+                "path": "/docs/portal/certificates/managing-certificates.md"
               },
               {
                 "title": "Auto-Renewal",
-                "path": "/docs/certificates/auto-renewal.md"
+                "path": "/docs/portal/certificates/auto-renewal.md"
               }
             ]
           },
-          { "title": "Reports", "path": "/docs/reports.md" },
-          { "title": "Content Management", "path": "/docs/content-management.md" },
+          { "title": "Reports", "path": "/docs/portal/reports.md" },
+          { "title": "Content Management", "path": "/docs/portal/content-management.md" },
           {
             "title": "Identities and Access",
             "routes": [
               {
                 "title": "Overview",
-                "path": "/docs/identities-and-access/overview.md"
+                "path": "/docs/portal/identities-and-access/overview.md"
               },
               {
                 "title": "Managing Roles",
-                "path": "/docs/identities-and-access/managing-roles.md"
+                "path": "/docs/portal/identities-and-access/managing-roles.md"
               },
               {
                 "title": "Managing Users",
-                "path": "/docs/identities-and-access/managing-users.md"
+                "path": "/docs/portal/identities-and-access/managing-users.md"
               }
             ]
           },
-          { "title": "FAQ", "path": "/docs/faq.md" }
+          { "title": "FAQ", "path": "/docs/portal/faq.md" }
+        ]
+      },
+      {
+        "title":"API",
+        "heading": true,
+        "routes": [
+          { "title": "Introduction", "path": "/docs/api/intro.md" }
         ]
       }
     ]
