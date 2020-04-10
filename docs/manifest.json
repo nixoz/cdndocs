@@ -7,6 +7,19 @@
           { "title": "Introduction", "path": "/docs/intro.md" },
           { "title": "Getting Started", "path": "/docs/getting-started.md" },
           {
+            "title": "Accessing Portal",
+            "routes": [
+              {
+                "title": "Logging-In",
+                "path": "/docs/accessing-portal/logging-in.md"
+              },
+              {
+                "title": "Forgot Password",
+                "path": "/docs/accessing-portal/forgot-password.md"
+              }
+            ]
+          },
+          {
             "title": "Properties",
             "routes": [
               {
