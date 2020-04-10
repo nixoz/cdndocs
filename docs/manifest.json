@@ -1,7 +1,7 @@
 {
     "routes": [
       { "title": "Introduction", "path": "/docs/intro.md" },
-      { "title": "Getting Started", "path": "/docs/intro.md" },
+      { "title": "Getting Started", "path": "/docs/getting-started.md" },
       {
         "title": "Portal",
         "heading": true,
@@ -128,8 +128,7 @@
                 "path": "/docs/portal/identities-and-access/managing-users.md"
               }
             ]
-          },
-          { "title": "FAQ", "path": "/docs/portal/faq.md" }
+          }
         ]
       },
       {
@@ -138,6 +137,7 @@
         "routes": [
           { "title": "Introduction", "path": "/docs/api/intro.md" }
         ]
-      }
+      },
+      { "title": "FAQ", "path": "/docs/faq.md" }
     ]
   }
