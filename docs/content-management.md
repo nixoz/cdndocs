@@ -26,6 +26,7 @@ If the content on your origin web server has changed, request a purge to have CD
 
 
 |**Fields**|**Description**|
+|---|---|
 | Target Environment | Select whether the purge will occur in a staging or production environment.|
 | Purge Action | Select whether you want the content deleted or invalidated.|
 | Purge Type | Select whether you want to purge a file or a directory.|
