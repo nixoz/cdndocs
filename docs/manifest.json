@@ -33,6 +33,38 @@
               {
                 "title": "Managing Origins",
                 "path": "/docs/properties/managing-origins.md"
+              },
+              {
+                "title": "Deploying a Property",
+                "path": "/docs/properties/deploying-property.md"
+              },
+              {
+                "title": "Testing a Property",
+                "path": "/docs/properties/testing-property.md"
+              },
+              {
+                "title": "Undeploying a Property",
+                "path": "/docs/properties/undeploying-property.md"
+              },
+              {
+                "title": "Editing Properties",
+                "path": "/docs/properties/editing-properties.md"
+              },
+              {
+                "title": "Cloning Properties",
+                "path": "/docs/properties/cloning-property.md"
+              },
+              {
+                "title": "Validating Properties",
+                "path": "/docs/properties/validating-property.md"
+              },
+              {
+                "title": "Comparing Property Versions",
+                "path": "/docs/properties/comparing-properties.md"
+              },
+              {
+                "title": "Deleting Property",
+                "path": "/docs/properties/deleting-properties.md"
               }
             ]
           },
