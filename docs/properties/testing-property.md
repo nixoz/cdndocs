@@ -6,7 +6,7 @@ Before you deploy your property to production, we recommend you test and verify 
 
 There are multiple ways to send test traffic to the staging environment:
 
-- Modify your DNS server to point your hostname to the CDN360 staging hostname staging.qtlgslb.com.
+- Modify your DNS server to point your hostname to the CDN360 staging hostname ```staging.qtlgslb.com```.
 - Modify the ```/etc/hosts```
 
  file to hard code the hostname to be accelerated to one of the staging servers IP addresses. Refer to the CDN360 [API](<http://cdn360doc.quantil.com/apidocs/api.html>).
