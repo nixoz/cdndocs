@@ -1,6 +1,6 @@
 <!--?xml version="1.0" encoding="utf-8"?-->
 
-# Testing Your Property in Staging
+## Testing Your Property in Staging
 
 Before you deploy your property to production, we recommend you test and verify your property to make sure it works as expected. CDN360 provides a staging environment for you to test your property configurations without affecting production. Sending your test traffic to the servers in the staging environment is a way for you to make sure the behavior is what you expect.
 
@@ -29,7 +29,7 @@ $ dig staging.qtlgslb.com
 ```
 
 
-# Testing Your Property In Production
+## Testing Your Property In Production
 
 After you create a CNAME and set your DNS server to point the CNAME to your property's hostname, you can browse your content under the hostname.
 
