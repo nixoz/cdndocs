@@ -27,6 +27,27 @@
                 "path": "/docs/properties/adding_origins.md"
               }
             ]
+          },
+          {
+            "title": "CNAMEs",
+            "routes": [
+              {
+                "title": "Managing CNAMEs",
+                "path": "/docs/cnames/managing-cnames.md"
+              },
+              {
+                "title": "Creating a CNAME",
+                "path": "/docs/cnames/creating-cname.md"
+              },
+              {
+                "title": "Editing a CNAME",
+                "path": "/docs/cnames/editing-cname.md"
+              },
+              {
+                "title": "Deleting a CNAME",
+                "path": "/docs/cnames/deleting-cname.md"
+              }
+            ]
           }
         ]
       }
