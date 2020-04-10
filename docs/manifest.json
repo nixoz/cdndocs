@@ -93,6 +93,23 @@
               }
             ]
           },
+          {
+            "title": "Certificates",
+            "routes": [
+              {
+                "title": "Overview",
+                "path": "/docs/certificates/overview.md"
+              },
+              {
+                "title": "Managing Certificates",
+                "path": "/docs/certificates/managing-certificates.md"
+              },
+              {
+                "title": "Auto-Renewal",
+                "path": "/docs/certificates/auto-renewal.md"
+              }
+            ]
+          },
           { "title": "Reports", "path": "/docs/reports.md" },
           { "title": "Content Management", "path": "/docs/content-management.md" },
           {
@@ -100,7 +117,7 @@
             "routes": [
               {
                 "title": "Overview",
-                "path": "/docs/identities-and-access/managing-cnames.md"
+                "path": "/docs/identities-and-access/overview.md"
               },
               {
                 "title": "Managing Roles",
