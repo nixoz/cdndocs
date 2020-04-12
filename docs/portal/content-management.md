@@ -6,7 +6,7 @@ Content management purge activities are performed from the Content Management pa
 
 The following figure shows the key elements on the page, and the table following the figure describes them.
 
-![null](<../Resources/Images/Content Management.png>)
+![null](<../resources/images/Content Management.png>)
 
 ## Purge
 
@@ -22,7 +22,7 @@ If the content on your origin web server has changed, request a purge to have CD
 2. At the top right of the page, click the **Create Purge** button. 
 3. Complete the fields in the Purge form. Required fields are denoted by an asterisk (\*). The top of the form shows the percentage of the daily purge quota that has been used.
 
-![null](<../Resources/Images/Purge Form.png>)
+![null](<../resources/images/Purge Form.png>)
 
 
 |**Fields**|**Description**|
@@ -48,7 +48,7 @@ If the content on your origin web server has changed, request a purge to have CD
 - Date and time when the purge request was submitted and completed.
 - A success rate indicator that shows a completion percentage from 0 to 100%.
 
-![null](<../Resources/Images/dashboard13.png>)
+![null](<../resources/images/dashboard13.png>)
 
 3. To specify the exact content you want to purge, click [here](<Creating a Purge Request.htm>).
 

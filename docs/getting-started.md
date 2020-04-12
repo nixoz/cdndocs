@@ -13,5 +13,5 @@ Using CDN360 to accelerate and distribute your content involves the following st
 
 The following figure shows the steps for creating an acceleration service for a hostname.
 
-![null](<../../resources/images/flowchart.png>)
+![null](<../resources/images/flowchart.png>)
 
