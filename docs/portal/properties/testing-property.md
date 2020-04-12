@@ -1,4 +1,4 @@
-## Testing Property
+# Testing Property
 
 Before you deploy your property to production, we recommend you test and verify your property to make sure it works as expected. 
 
