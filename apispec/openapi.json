@@ -3284,11 +3284,11 @@
         ]
       }
     },
-    "CNAME Management"
     "/cdn/cnames": {
       "post": {
         "summary": "Create a CNAME",
         "tags": [
+          "CNAME Management"
         ],
         "responses": {
           "201": {
