@@ -1,0 +1,70 @@
+{
+  "title": "customerConfigs",
+  "type": "object",
+  "description": "This object contains various limits and settings for a customer.  Customers cannot modify their own settings. Resellers can modify them for their child customers. Resellers can only specify products they have already purchased. If you have special requirements for your account, please contact our support team.",
+  "x-examples": {
+    "example-1": {}
+  },
+  "properties": {
+    "apiRate": {
+      "type": "integer",
+      "default": 64,
+      "description": "Maximum number of API requests permitted in any rolling 1-minute window."
+    },
+    "apiAccountLimit": {
+      "type": "integer",
+      "default": 3,
+      "description": "Maximum number of API accounts that can be created."
+    },
+    "type": {
+      "type": "string",
+      "default": "regular",
+      "description": "Type of customer account.  Resellers can only create customer accounts of type 'regular'.",
+      "enum": [
+        "regular",
+        "reseller"
+      ]
+    },
+    "products": {
+      "type": "array",
+      "description": "Products enabled for the customer. \"CDN\" representing CDN360 and \"ECP\" representing Edge Computing Platform are supported. ",
+      "enum": [
+        "CDN",
+        "ECP'"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "default": "suspended",
+      "description": "Account status. If the status is <i>suspended</i> API calls will fail with status code 403 indicating they are forbidden. Portal logins will also fail.  Child customers of a suspended reseller are <b>not</b> automatically suspended though.",
+      "enum": [
+        "active",
+        "suspended"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the customer.",
+      "maxLength": 1018
+    },
+    "regionalOffice": {
+      "type": "string",
+      "description": "Regional sales office name that satisfies the regular expression [0-9a-zA-Z_-]{1,28}. "
+    },
+    "parentId": {
+      "type": "string",
+      "description": "ID of the parent customer.  Resellers can omit this field when creating a customer. It will be filled in automatically."
+    },
+    "contactLimit": {
+      "type": "integer",
+      "default": 20,
+      "description": "Number of portal user accounts the customer is permitted to have."
+    }
+  },
+  "required": [
+    "regionalOffice"
+  ]
+}

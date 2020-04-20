@@ -1,0 +1,68 @@
+title: propertyVersion
+type: object
+description: This describes a property version. It includes all of the configuration along with information about its deployment status.
+x-examples:
+  example-1:
+    value:
+      version: 1
+      configs:
+        description: validPropertyVersionAllFields_PropertySteps
+        cacheKeyHostname: testdomain-t1572317034478.mwtrial.info
+        tlsCertificateId: 8fde2798385e3d0db19bc330
+        tlsMinVersion: '1.1'
+        tlsMaxVersion: '1.2'
+        tlsCiphers: 'ALL:-MD5'
+        syntaxVersion: '1'
+        hasBeian: false
+        schemeInCacheKey: true
+        requestHandlers:
+          preprocess: {}
+          prehtlookup: {}
+          posthtlookup: {}
+          origins: {}
+          mod4origin: {}
+          cachetime: {}
+          mod4client: {}
+          responseDone: {}
+        hostnames:
+          - testdomain-t1572317034478.mwtrial.info
+          - testdomain-t1572317034478.mwtrial.info
+        origins:
+          - name: my_origin_1572317034478
+            supportedProtocol: both
+            hostHeader: autohostheader.com
+            directConnection: alwaysDirect
+            servers:
+              - mwtrial.info
+        loadBalancerHashKey: $http_hashvalue
+        edgeLogic: 'location / {origin_pass my_origin_1572317034478;} return 200;'
+        allowProtocolDowngrade: false
+      status:
+        lastValidationStatus: NotValidated
+        frozen: false
+        creationTime: '2019-10-29T02:43:53Z'
+        lastUpdateTime: '2019-10-29T02:43:56Z'
+        inProduction: false
+        inStaging: false
+properties:
+  version:
+    type: integer
+  configs:
+    $ref: ./propertyconfiguration.v1.yaml
+  status:
+    type: object
+    properties:
+      lastValidationStatus:
+        type: string
+      frozen:
+        type: string
+      creationTime:
+        type: string
+      lastUpdateTime:
+        type: string
+      inProduction:
+        type: boolean
+      inStaging:
+        type: boolean
+x-tags:
+  - Property Management

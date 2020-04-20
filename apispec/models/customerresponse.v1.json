@@ -1,0 +1,52 @@
+{
+  "title": "customerresponse",
+  "type": "object",
+  "description": "Customer account details",
+  "properties": {
+    "customerId": {
+      "type": "integer",
+      "description": "ID of the customer account."
+    },
+    "apiName": {
+      "type": "string",
+      "description": "Admin API login name."
+    },
+    "name": {
+      "type": "string",
+      "description": "Customer name."
+    },
+    "apiKey": {
+      "type": "string",
+      "description": "API key corresponding to the admin API login."
+    },
+    "phone": {
+      "type": "string",
+      "description": "A phone number.\n"
+    },
+    "address": {
+      "$ref": "./address.v1.json"
+    },
+    "configs": {
+      "$ref": "./customerconfigs.v1.json"
+    },
+    "portalSettings": {
+      "$ref": "./customerportalsettings.v1.json"
+    },
+    "ipWhiteList": {
+      "type": "array",
+      "default": [
+        "0.0.0.0/0"
+      ],
+      "description": "List of IP addresses from which API calls using API accounts are permitted.  You can specify a range, an individual IP address, or an IP in CIDR notation.  Example: <code>[\"1.1.1.1-1.1.1.8\", \"1.2.3.4\", \"1.5.5.0/24\"]</code>  The default is [\"0.0.0.0/0\"] which permits API calls from all IP addresses. For security, we strongly recommend specifying appropriate IP addresses for your company.\n",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "customerId",
+    "apiName",
+    "name",
+    "apiKey"
+  ]
+}
