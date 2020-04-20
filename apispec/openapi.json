@@ -1,21 +1,16 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "CDN",
+    "title": "CDN360 API Specification",
     "version": "1.0",
-    "description": "CDN360 APIs allow you to manage domain configurations.",
-    "x-logo": {
-      "url": "images/cdn6.jpg",
-      "backgroundColor": "#FFFFFF",
-      "altText": "CDNetworks logo"
-    },
+    "description": "CDN360 APIs allow you to manage CDN360 Services",
     "contact": {
-      "url": "https://www.cdnetworks.com"
+      "url": "https://www.quantil.com"
     }
   },
   "servers": [
     {
-      "url": "https://ngapi.cdnetworks.com"
+      "url": "https://ngapi.quantil.com"
     }
   ],
   "paths": {
@@ -3289,11 +3284,11 @@
         ]
       }
     },
+    "CNAME Management"
     "/cdn/cnames": {
       "post": {
         "summary": "Create a CNAME",
         "tags": [
-          "CNAME Management"
         ],
         "responses": {
           "201": {
