@@ -131,14 +131,6 @@
           }
         ]
       },
-      {
-        "title":"API",
-        "heading": true,
-        "routes": [
-          { "title": "Introduction", "path": "/docs/api/intro.md" },
-          { "title": "Getting Started", "path": "/docs/api/getting-started.md" }
-        ]
-      },
       { "title": "FAQ", "path": "/docs/faq.md" }
     ]
   }
