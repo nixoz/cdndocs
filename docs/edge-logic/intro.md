@@ -24,7 +24,7 @@ As you probably guessed, this configuration always returns a 200 status code wit
 
 For more information about these two directives, please refer to the NGINX documentation site. On the portal, you need enter only the code above into the "Edge Logic" text area:
 
-![helloworld](</docs/resources/images/edge-logic/helloworld.png> =250x)
+![null](</docs/resources/images/edge-logic/helloworld.png>)
 
 If you use the [API to create the property](http://cdn360doc.quantil.com/apidocs/api.html#operation/createProperty), then the following is the complete JSON of the property configuration:
 <table>
