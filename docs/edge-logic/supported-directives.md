@@ -34,7 +34,7 @@ The policy parameter also supports variables; the value must be one of the three
 
 If needed, [proxy_hide_header](#proxy_hide_header) can be used to remove the "Cache-Control" or "Link" headers from the origin.
 
-2. The new parameter `qtl_if(condition)` has been introduced to allow adding the header based on some condition. If the condition is true, the `add_header` directive adds the header and the value to the downstream response based on the policy. The `qtl_if `parameter should always be at the end of the directive configuration. A condition may be any of the following,
+2. The new parameter ```qtl_if(condition)``` has been introduced to allow adding the header based on some condition. If the condition is true, the ```add_header``` directive adds the header and the value to the downstream response based on the policy. The ```qtl_if``` parameter should always be at the end of the directive configuration. A condition may be any of the following,
 
 *   A variable name; false if the value of a variable is an empty string.
 *   Comparison of a variable with a string using the "=" and "!=" operators.
@@ -56,7 +56,7 @@ add_header X-Cache-Status $upstream_cache_status policy=$cache_status_method;
 ```
 
 ### [allow](http://nginx.org/en/docs/http/ngx_http_access_module.html#allow)
-```(standard, ETA: July 2020)```
+<span class="badge">standard</span><span class="badge">ETA: July 2020</span>
 
 Allows access for the specified network or address. (Work in progress to make this only apply on edge.)
 
@@ -103,13 +103,13 @@ Defines the URI that will be shown for the specified errors. No change to the pu
 This is a directive to perform some common encoding, decoding, hash, hash-mac, encryption, decryption and comparison algorithms. It is added to the [rewrite module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html).  Supported functions are:
 | Type | Name | Syntax |
 |-|-|--
-| hash | **SHA256**, **MD5**|`eval_func $output SHA256 $input;`|
-|BASE64<br>codec|BASE64_ENCODE<br>**BASE64_DECODE**|`eval_func $output BASE64_ENCODE $input;`|
- |URL<br>codec| URL_ENCODE<br>**URL_DECODE**|`eval_func $output URL_ENCODE $input;`|
-|HEX<br>codec| HEX_ENCODE<br>**HEX_DECODE**|`eval_func $output HEX_ENCODE $input;`|
-|AES<br>cipher| **ENCRYPT_AES_256_CBC**<br>**DECRYPT_AES_256_CBC**|`eval_func $output ENCRYPT_AES_256_CBC $key $iv $message;`|
-|HMAC<br>generation| **HMAC**|`eval_func $output HMAC $key $message {digest algorithm};`<br>`{digest algorithm}` can be `MD5`, `SHA1`, `SHA256`|
-|integer<br>comparator| COMPARE_INT|`eval_func $output COMPARE_INT $data1 $data2;`<br>`$output` will be "1" when `$data1 > $data2`. "0" and "-1" for the other cases.`|
+| hash | **SHA256**, **MD5**|```eval_func $output SHA256 $input;```|
+|BASE64<br>codec|BASE64_ENCODE<br>**BASE64_DECODE**|```eval_func $output BASE64_ENCODE $input;```|
+ |URL<br>codec| URL_ENCODE<br>**URL_DECODE**|```eval_func $output URL_ENCODE $input;```|
+|HEX<br>codec| HEX_ENCODE<br>**HEX_DECODE**|```eval_func $output HEX_ENCODE $input;```|
+|AES<br>cipher| **ENCRYPT_AES_256_CBC**<br>**DECRYPT_AES_256_CBC**|```eval_func $output ENCRYPT_AES_256_CBC $key $iv $message;```|
+|HMAC<br>generation| **HMAC**|```eval_func $output HMAC $key $message {digest algorithm};```<br>```{digest algorithm}``` can be ```MD5```, ```SHA1```, ```SHA256```|
+|integer<br>comparator| COMPARE_INT|```eval_func $output COMPARE_INT $data1 $data2;```<br>```$output``` will be "1" when ```$data1 > $data2```. "0" and "-1" for the other cases.`|
 
 **NOTE:** The output value of the functions in **bold** is a binary string which may not be printable. You need to use the BASE64_ENCODE, URL_ENCODE or HEX_ENCODE to convert it to a printable format.
 
@@ -175,13 +175,13 @@ This is a wrapper of the [proxy_connect_timeout](http://nginx.org/en/docs/http/n
 
 This directive can be used to add, delete, or overwrite the response header fields from the origin **before** any other processing. The directive supports NGINX variables.
 
-Possible values of policy are `repeat, overwrite,` and `preserve.` The policy parameter supports a variable as a value. The default policy is `repeat`.
+Possible values of policy are ```repeat, overwrite,``` and ```preserve.``` The policy parameter supports a variable as a value. The default policy is ```repeat```.
 
-*   The `repeat` policy always adds the header and the value into the upstream response.
-*   The `overwrite` policy overwrites the value if the header already exists in the upstream response. Otherwise, it adds the header and the value into the upstream response.
-*   The `preserve` policy adds the header and the value into the upstream response only if the header does not exist in the upstream response.
+*   The ```repeat``` policy always adds the header and the value into the upstream response.
+*   The ```overwrite``` policy overwrites the value if the header already exists in the upstream response. Otherwise, it adds the header and the value into the upstream response.
+*   The ```preserve``` policy adds the header and the value into the upstream response only if the header does not exist in the upstream response.
 
-The parameter `qtl_if` is introduced to add the header based on the condition. A condition can be one of the following:
+The parameter ```qtl_if``` is introduced to add the header based on the condition. A condition can be one of the following:
 
 *   A variable name; false if the value of a variable is an empty string.
 *   A comparison of a variable with a string using the "=" and "!=" operators.
@@ -189,13 +189,13 @@ The parameter `qtl_if` is introduced to add the header based on the condition. A
 
 Examples: 
 
-Added a header `X-Status` based on origin's status code:
+Added a header ```X-Status``` based on origin's status code:
 ```nginx
 origin_header_modify X-Status Good qtl_if($upstream_response_status ~ "^[23]");
 origin_header_modify X-Status ClientErr qtl_if($upstream_response_status ~ "^4");
 origin_header_modify X-Status ServerErr qtl_if($upstream_response_status ~ "^5");
 ```
-Delete the `Cache-Control` header in the origin's response:
+Delete the ```Cache-Control``` header in the origin's response:
 ```nginx
 origin_header_modify Cache-Control "" policy=overwrite;
 ```
@@ -206,17 +206,17 @@ Although CDN360 has hierarchical cache structure, the directive changes the head
 
 ### origin_limit_rate (CDN360 Proprietary, standard)
 
-**Syntax**: origin_limit_rate rate;
-**Default**: origin_limit_rate 0;
-**Context**: http, server, location
+**Syntax**: ```origin_limit_rate rate;```<br>
+**Default**: ```origin_limit_rate 0;```<br>
+**Context**: ```http, server, location```
 
 This a wrapper of the [proxy_limit_rate](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_limit_rate) directive. It limits the speed of reading the response from the origin server.
 
 ### origin_pass (CDN360 Proprietary, standard)
 
-**Syntax**: origin_pass _origin_name[URI]_;
-**Default**: none
-**Context**: location, if in location
+**Syntax**: ```origin_pass _origin_name[URI]_;```<br>
+**Default**: ```none```<br>
+**Context**: ```location, if in location```
 
 This directive specifies the origin to fetch the content. It is a wrapper of the NGINX [proxy_pass](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass) directive. It takes one parameter that is an origin name specified in the "origins" field of the property JSON. The origin name can be optionally followed by a URI. Variables can be used in the URI. Examples:
 ```nginx
@@ -224,7 +224,7 @@ origin_pass my_origin;    #URI is not specified,
 origin_pass my_origin/$uri;
 origin_pass my_origin/abc/$uri;
 ```
-If the URI is omitted, the variable `$request_uri` (with all the query strings) is appended automatically when accessing the origin.
+If the URI is omitted, the variable ```$request_uri``` (with all the query strings) is appended automatically when accessing the origin.
 
 ### origin_read_timeout (CDN360 Proprietary, advanced)
 
@@ -252,7 +252,7 @@ This is a wrapper of the [proxy_send_timeout](http://nginx.org/en/docs/http/ngx_
 This is a wrapper of the [proxy_set_header](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_set_header) directive to allow redefining (overwriting) or appending fields to the request header passed to the origin server. The following changes were made to the open-source version:
 
 1. This directive merges the configurations across different levels (server/location/if). However, if the same header name appears in multiple levels, only the deepest layer’s configuration takes effect for that header. Because CDN360 has a hierarchical cache structure, we try to make sure the headers set by this directive appear only in the requests to the origin servers (not parent cache servers).
-2. The new parameter  `qtl_if(condition)` can be used to set the header based on some conditions. If the condition is true, the directive takes effect. The `qtl_if` parameter should always be configured at the end of the directive configuration. A condition may be one of the following:
+2. The new parameter  ```qtl_if(condition)``` can be used to set the header based on some conditions. If the condition is true, the directive takes effect. The ```qtl_if``` parameter should always be configured at the end of the directive configuration. A condition may be one of the following:
 
 *   A variable name; false if the value of a variable is an empty string.
 *   Comparison of a variable with a string using the "=" and "!=" operators.
@@ -408,7 +408,7 @@ Enables the specified protocols for requests to a proxied HTTPS server. No chang
 **Default:** none
 **Contexts:** http, server, location, if in location
 
-This CDN360-proprietary directive sets the sample rate of the [Real-Time Log](https://docs.google.com/document/d/1ju14e1arEPLsGFmxaYExjcdO7bwdYQ-m4h7tdbqpEZI/edit#heading=h.tbbol2vdsupw). The parameter value can be an integer in [0,65536] . 0 turns of the real time logging. Variable is supported. By default, the sample rate is set for the entire site by the `"realTimeLog"` field of the property JSON. This directive can be used to change the sample rate or turn off real-time logging selectively for some locations.
+This CDN360-proprietary directive sets the sample rate of the [Real-Time Log](https://docs.google.com/document/d/1ju14e1arEPLsGFmxaYExjcdO7bwdYQ-m4h7tdbqpEZI/edit#heading=h.tbbol2vdsupw). The parameter value can be an integer in [0,65536] . 0 turns of the real time logging. Variable is supported. By default, the sample rate is set for the entire site by the ```realTimeLog``` field of the property JSON. This directive can be used to change the sample rate or turn off real-time logging selectively for some locations.
 
 ### [return](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return) (standard)
 
@@ -475,7 +475,7 @@ Sets the size of the slice when fetching large files from the origin. We made a 
 **Default:** none
 **Contexts:** http, server, location, if in location
 
-Removes some query parameters from the variable `$sorted_querystring_args`.
+Removes some query parameters from the variable ```$sorted_querystring_args```.
 This feature is implemented on top of this [open-source project](https://github.com/wandenberg/nginx-sorted-querystring-module).
 
 ### [sub_filter](http://nginx.org/en/docs/http/ngx_http_sub_module.html#sub_filter) (advanced)
