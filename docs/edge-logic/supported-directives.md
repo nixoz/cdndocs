@@ -524,7 +524,7 @@ Sets a value for the specified variable. No change to the public version.
 Allows access if all (all) or at least one (any) of the ngx_http_access_module, ngx_http_auth_basic_module, ngx_http_auth_request_module, or ngx_http_auth_jwt_module modules allow access. No change to the public version. 
 
 
-### sanitize_accept_encoding (CDN360 Proprietary, advanced)
+### sanitize_accept_encoding
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
