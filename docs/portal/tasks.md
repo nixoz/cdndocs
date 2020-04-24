@@ -10,6 +10,11 @@ The following figure shows the key elements on the page, and the table following
 
 ![null](<../resources/images/Tasks Page.png>)
 
+| **Fields** | **Description** |
+| ---------- | --------------- |
+| 1 | Use these radio buttons to view tasks that have been validated or deployed: <ul><li>Validation lists the validation tasks that have been performed, with the most recent ones at the top of the list.<br><li>Deployment lists the deployment tasks that have been performed, with the most recent ones at the top of the list.
+| 2 | To filter tasks, type characters in this field and press the Enter key. Tasks that do not contain the typed characters are hidden. Filtering is not case-sensitive. To remove the filter, click the Reset button.
+| 3 | Click a task ID or name to view details?? about the selected task.|
 
 ## Viewing Task Details
 
@@ -22,10 +27,10 @@ The following figure shows the key elements on the page, and the table following
 
 ![null](<../resources/images/Failed Validation.png>)
 
-1. To view details about tasks related to deployments, click the ID or name of a task on the **Deployment** tab. The following figure shows task details for a successful deployment. If **Certificate ID** or **Property ID** appears at the bottom left, clicking it displays the form for that certificate or property.
+3. To view details about tasks related to deployments, click the ID or name of a task on the **Deployment** tab. The following figure shows task details for a successful deployment. If **Certificate ID** or **Property ID** appears at the bottom left, clicking it displays the form for that certificate or property.
 
 ![null](<../resources/images/Successful Deployment.png>)
 
-> The following figure shows task details for a failed deployment. If **Certificate ID** or **Property ID** appears at the bottom left, clicking it displays the form for that certificate or property.
+ The following figure shows task details for a failed deployment. If **Certificate ID** or **Property ID** appears at the bottom left, clicking it displays the form for that certificate or property.
 
 ![null](<../resources/images/Failed Deployment.png>)

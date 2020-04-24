@@ -7,7 +7,7 @@ If you forgot your password:
 
 ![null](<../../resources/images/forgotpsword.png>)
 
-1. Click the **Submit** button.
+3. Click the **Submit** button.
 
 CDN360 will send you an email message with a verification code to enter to reset your password.
 
