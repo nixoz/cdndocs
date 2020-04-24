@@ -101,15 +101,16 @@ Defines the URI that will be shown for the specified errors. No change to the pu
 **Context**:  http, server, location, if in location
 
 This is a directive to perform some common encoding, decoding, hash, hash-mac, encryption, decryption and comparison algorithms. It is added to the [rewrite module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html).  Supported functions are:
+
 | **Type** | **Name** | **Syntax** |
-|-|-|--| 
-| hash | **SHA256**, **MD5**|```eval_func $output SHA256 $input;```|
-|BASE64<br>codec|BASE64_ENCODE<br>**BASE64_DECODE**|```eval_func $output BASE64_ENCODE $input;```|
- |URL<br>codec| URL_ENCODE<br>**URL_DECODE**|```eval_func $output URL_ENCODE $input;```|
-|HEX<br>codec| HEX_ENCODE<br>**HEX_DECODE**|```eval_func $output HEX_ENCODE $input;```|
-|AES<br>cipher| **ENCRYPT_AES_256_CBC**<br>**DECRYPT_AES_256_CBC**|```eval_func $output ENCRYPT_AES_256_CBC $key $iv $message;```|
-|HMAC<br>generation| **HMAC**|```eval_func $output HMAC $key $message {digest algorithm};```<br>```{digest algorithm}``` can be ```MD5```, ```SHA1```, ```SHA256```|
-|integer<br>comparator| COMPARE_INT|```eval_func $output COMPARE_INT $data1 $data2;```<br>```$output``` will be "1" when ```$data1 > $data2```. "0" and "-1" for the other cases.`|
+|----------|----------|------------| 
+| hash | **SHA256**, **MD5** | ```eval_func $output SHA256 $input;``` |
+| BASE64<br>codec | BASE64_ENCODE<br>**BASE64_DECODE** | ```eval_func $output BASE64_ENCODE $input;``` |
+| URL<br>codec | URL_ENCODE<br>**URL_DECODE** | ```eval_func $output URL_ENCODE $input;``` |
+| HEX<br>codec | HEX_ENCODE<br>**HEX_DECODE** | ```eval_func $output HEX_ENCODE $input;``` |
+| AES<br>cipher | **ENCRYPT_AES_256_CBC**<br>**DECRYPT_AES_256_CBC** |```eval_func $output ENCRYPT_AES_256_CBC $key $iv $message;``` |
+| HMAC<br>generation | **HMAC** | ```eval_func $output HMAC $key $message {digest algorithm};```<br>```{digest algorithm}``` can be ```MD5```, ```SHA1```, ```SHA256``` |
+| integer<br>comparator | COMPARE_INT | ```eval_func $output COMPARE_INT $data1 $data2;```<br>```$output``` will be "1" when ```$data1 > $data2```. "0" and "-1" for the other cases. |
 
 **NOTE:** The output value of the functions in **bold** is a binary string which may not be printable. You need to use the BASE64_ENCODE, URL_ENCODE or HEX_ENCODE to convert it to a printable format.
 
