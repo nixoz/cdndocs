@@ -28,7 +28,7 @@ The following report types are supported:
 
 | **Fields**                                                                                              | **Description**                                                                                         |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Report Type                                                                                             | Select the [type of report](<Understanding Report Types.htm>) you want to generate.                     |
+| Report Type                                                                                             | Select the [type of report](#understanding-report-types) you want to generate.                     |
 | Hostnames                                                                                               | Select one or more hostnames that you defined when you created your property.                           |
 | Date Range                                                                                              | Select the start and end dates and the time for the report.                                             |
 | Report Interval                                                                                         | Select the granularity of the returned data. Choices are:                                               |
@@ -44,9 +44,7 @@ The following report types are supported:
 - Drag over the chart to magnify areas, and then use the **Reset zoom** button to return to the default zoom level.
 - Use the **Download Options** button at the top-right of the report to download raw data in comma-separated-value (CSV) format.
 
-<!-- -->
+## Understanding Report Types
 
-<!--?xml version="1.0" encoding="utf-8"?-->
 
-<link href="../resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
 

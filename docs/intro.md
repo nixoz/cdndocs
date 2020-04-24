@@ -32,9 +32,9 @@ The platform's customizable point-and-click user interface provides granular con
 
 ## CDN360 Application Programming Interface (API)
 
-The CDN360 content delivery platform provides a rich [API](<http://cdn360doc.quantil.com/apidocs/api.html>) that supports the same functions as the CDN360 GUI, along with advanced configuration capabilities. Using the API, developers can have their applications interact with CDN360 by sending and receiving JavaScript Object Notation (JSON) data.
+The CDN360 content delivery platform provides a rich [API](</apidocs>) that supports the same functions as the CDN360 GUI, along with advanced configuration capabilities. Using the API, developers can have their applications interact with CDN360 by sending and receiving JavaScript Object Notation (JSON) data.
 
-### **Where to Go from Here**
+## Where to Go from Here
 
-Perform the steps in the [CDN360 Quick Start](<Quick Start.htm>)??.
+Perform the steps in the [Getting Started Guide](<./getting-started.md>).
 

@@ -20,7 +20,7 @@ If the content on your origin web server has changed, request a purge to have CD
 
 1. In the left pane, click **Content Management**.
 2. At the top right of the page, click the **Create Purge** button. 
-3. Complete the fields in the Purge form. Required fields are denoted by an asterisk (\*). The top of the form shows the percentage of the daily purge quota that has been used.
+3. Complete the fields in the Purge form. Required fields are denoted by an asterisk (```*```). The top of the form shows the percentage of the daily purge quota that has been used.
 
 ![null](<../resources/images/Purge Form.png>)
 
@@ -57,5 +57,5 @@ If the content on your origin web server has changed, request a purge to have CD
 
 ![null](<../resources/images/dashboard13.png>)
 
-3. To specify the exact content you want to purge, click [here](<Creating a Purge Request.htm>).
+3. To specify the exact content you want to purge, click [here](#creating-a-purge-request).
 
