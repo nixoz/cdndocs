@@ -4,6 +4,6 @@ A Canonical Name Record (CNAME record for short) is a DNS record that is used to
 
 The following sections discuss how you can create, update and delete CNAMEs.
 
-- [Creating a CNAME](<Creating a CNAME.htm>)
-- [Updating a CNAME](<Editing a CNAME.htm>)
-- [Deleting a CNAME](<Deleting a CNAME.htm>)
+- [Creating a CNAME](</docs/portal/cnames/creating-cname.md>)
+- [Updating a CNAME](</docs/portal/cnames/editing-cname.md>)
+- [Deleting a CNAME](</docs/portal/cnames/deleting-cname.md>)

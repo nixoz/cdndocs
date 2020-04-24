@@ -4,11 +4,10 @@
 2. Click the CNAME you want to edit <br><U>OR </u></br>Click the **Actions** drop-down list for the CNAME you want to edit, and then select **Edit**.
 3. At the top right of the page, click the **Edit** button.
 
-![null](<../../resources/images/Edit CNAME - Edit Button.png>)
-
+![null](</docs/resources/images/Edit CNAME - Edit Button.png>)
 
 The CNAME form that appears allows you to [create client region rules](<#Create_Client_Regions>), [edit client region rules](<#Edit_Client_Regions>), [delete client region rules](<#Delete_Client_Regions>), and [change advanced settings](<#Edit_Advanced_Settings>).
-![null](<../../resources/images/Editing CNAME Form.png>)
+![null](</docs/resources/images/Editing CNAME Form.png>)
 
 4. To create one or more client region rules, perform the following steps.
 
@@ -16,12 +15,12 @@ The CNAME form that appears allows you to [create client region rules](<#Create
 
 a. At the top right of the page, click the **Create Client Region Rule** button.
 
-![null](<../../resources/images/Create Client Region Rule Button.png>)
+![null](</docs/resources/images/Create Client Region Rule Button.png>)
 
 b. Complete all the fields, and then click the **Create Client Region Rule** button.
 c. To add more client region rules, repeat this step for each additional rule.
 
-![null](<../../resources/images/Create Client Region Rule.png>)
+![null](</docs/resources/images/Create Client Region Rule.png>)
 
 | **Fields** | **Description** |
 | ---------- | --------------- |
@@ -44,15 +43,13 @@ c. Click the **Update Client Zone Rule** button.
 
 a. Click the **Actions** drop-down list next to the rule you want to delete, and then select **Delete**.
 
-![null](<../../resources/images/CNAME Delete.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+![null](</docs/resources/images/CNAME Delete.png>)
 
 b. When prompted to confirm the deletion, click **OK** to delete the client region rule.
 
 7. To change the Has Beian setting, expand **Advanced Settings** and make your change.
 
-![null](<../../resources/images/CNAMEs - Advanced Settings.png>)
+![null](</docs/resources/images/CNAMEs - Advanced Settings.png>)
 
 | **Fields**      | **Description** |
 | --------------- | --------------- |

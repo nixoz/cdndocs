@@ -12,11 +12,11 @@ All certificates are versioned in CDN360. Once a version is saved, it cannot be 
 1. In the left pane, click **Certificates**.
 2. At the top right of the Certificates page, click the **Create New Certificate +** button.
 
-![null](<../../resources/images/Certificate - Edit Button.png>)
+![null](</docs/resources/images/Certificate - Edit Button.png>)
 
 3. Complete the fields in the Create Certificate form. Required fields are denoted by an asterisk (\*).
 
-![null](<../../resources/images/Create Version Button - Updating properties.png>)
+![null](</docs/resources/images/Create Version Button - Updating properties.png>)
 
 | **Fields**                                                                                                                     | **Description**                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -52,20 +52,11 @@ The following procedure describes how to generate self-signed certificates. Self
 1. In the left pane, click **Certificates**.
 2. At the top right, click the **Create New Certificate** button. 
 
-<!-- -->
-
-![null](<../../resources/images/Create new Certificate Button.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+![null](</docs/resources/images/Create new Certificate Button.png>)
 
 1. Complete the fields in the Create Certificate form and **Auto Generate Certificate** tab. Required fields are denoted by an asterisk (\*).
 
-<!-- -->
-
-![null](<../../resources/images/Auto Generate Certificate.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
+![null](</docs/resources/images/Auto Generate Certificate.png>)
 
 
 | **Fields**                                                                                                                     | **Description**                                                                                                                |
@@ -87,17 +78,9 @@ The following procedure describes how to generate self-signed certificates. Self
 | Email                                                                                                                          | Enter an email address.                                                                                                        |
 | Comments                                                                                                                       | Enter comments about the certificate.                                                                                          |
 
-
-
 2. Click the **Save Certificate** button followed by **OK**.
 
-<!-- -->
-
-Your certificate is saved and appears on the Certificates page. You can now use the certificate with any properties you create. You can also download the CSR to apply for a signed certificate from a CA, and then upload it to create a [new version](<Updating Expiring Certificates.htm>) of this certificate.
-
-<!--?xml version="1.0" encoding="utf-8"?-->
-
-<link href="../../resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
+Your certificate is saved and appears on the Certificates page. You can now use the certificate with any properties you create. You can also download the CSR to apply for a signed certificate from a CA, and then upload it to create a [new version](#updating-expiring-certificates) of this certificate.
 
 # Uploading an Existing Certificate
 
@@ -147,11 +130,11 @@ An expired certificate causes browsers to stop loading web content and display a
 
 1. In the certificate details form, click **Create Version**.
 
-![null](<../../resources/images/Create Version.png>)
+![null](</docs/resources/images/Create Version.png>)
 
 1. In the **Upload Certificate** tab, upload the private key, certificate, and chain certificate files. Then click **Save Version** and skip to step 13.
 
-![null](<../../resources/images/Buttons for Uploading Certs.png>)
+![null](</docs/resources/images/Buttons for Uploading Certs.png>)
 
 1. Use one of the following steps to apply for a new version from a CA:
 
@@ -163,7 +146,7 @@ An expired certificate causes browsers to stop loading web content and display a
 3. Click the **Auto Generate Certificate** tab, complete the required fields, and click **Save Version**.
 
 
-![null](<../../resources/images/Auto Generate Certificate.png>)
+![null](</docs/resources/images/Auto Generate Certificate.png>)
 
 | **Fields**                                                                                                      | **Description**                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -186,13 +169,11 @@ An expired certificate causes browsers to stop loading web content and display a
 
 4. On the right side of the certificate details form, click the **Create Version** button.
 
-![null](<../../resources/images/Create Version Button - Updating properties.png>)
+![null](</docs/resources/images/Create Version Button - Updating properties.png>)
 
 1. On the **Upload Certificate** tab, upload the certificate and chain certificate, and then click **Save Version**.
 
-![null](<../../resources/images/Certificate Versions.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+![null](</docs/resources/images/Certificate Versions.png>)
 
 1. Deploy the new certificate version to production.
 
@@ -203,17 +184,15 @@ An expired certificate causes browsers to stop loading web content and display a
 
 ![null](<../../resources/images/view_edit.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
 1. To remove the details. click the "**–**" icon next to the certificate name.
 
 # Deploying and Undeploying Certificates
 
-After you create a certificate, you can [deploy](<Deploying Certificates.htm>) it to the staging environment for testing, and then to the CDN360 production environment if testing is successful.
+After you create a certificate, you can [deploy](#deploying-certificates) it to the staging environment for testing, and then to the CDN360 production environment if testing is successful.
 
 **Important**: You must deploy the certificate for a property to use it.
 
-If you decide not to use a deployed certificate, you can [undeploy](<Undeploying Certificates.htm>) it from the staging and production environments.
+If you decide not to use a deployed certificate, you can [undeploy](#undeploying-certificates) it from the staging and production environments.
 
 ## Deploying Certificates
 
@@ -227,9 +206,7 @@ After you create a certificate, you can deploy it to the staging environment whe
 2. On the Certificates page, click the name of the certificate you want to deploy.
 3. Scroll down to the **Deployment** section, and then select **Staging** or **Production** from the **Deployment Destination** drop-down list.
 
-![null](<../../resources/images/Selecting a Deployment Options.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+![null](</docs/resources/images/Selecting a Deployment Options.png>)
 
 1. Click the **Deploy Configuration** button. When the Deployment Confirmation pop-up appears, click **OK**. Wait for the message that the certificate has been successfully deployed, or click the **Go to Dashboard** button to perform other tasks while deployment continues in the background, and then click **Tasks** in the left pane to confirm that the certificate was deployed successfully.
 

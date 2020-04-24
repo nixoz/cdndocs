@@ -23,23 +23,17 @@ Initially, the portal provides three default roles: Admin, Operator, and Viewer.
 - Operator can view and make changes to all portal settings, except users and roles.
 - Viewer has read-only permission and cannot change any portal settings.
 
-<!-- -->
-
-
-
-### Identity & Access Management Page
+## Identity & Access Management Page
 
 To display the Identity & Access Management page, click your initials at the top right of the portal, and then select **Identity & Access Management**.
 
-![null](<../../resources/images/Selecting the Identity and Access Management Page.png>)
+![null](</docs/resources/images/Selecting the Identity and Access Management Page.png>)
 
 The following figure shows the key elements on the page, and the table following the figure describes them.
 
-![null](<../../resources/images/Identity & Access Management Page.png>)
+![null](</docs/resources/images/Identity & Access Management Page.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
-# Permissions That Can Be Assigned to Roles
+## Permissions That Can Be Assigned to Roles
 
 | **This Permission...**                         | **Allows the Role to...**                      |
 | ---------------------------------------------- | ---------------------------------------------- |
