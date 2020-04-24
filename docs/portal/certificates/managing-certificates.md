@@ -94,11 +94,11 @@ To upload the files as a new certificate:
 1. In the left pane, click **Certificates**.
 2. At the top right, click the **Create New Certificate** button. 
 
-![null](<../../resources/images/Create new Certificate Button.png>)
+![null](</docs/resources/images/Create new Certificate Button.png>)
 
 3. Complete the fields in the Create Certificate form and **Upload Certificate** tab. Required fields are denoted by an asterisk (\*).
 
-![null](<../../resources/images/Upload Certificate.png>)
+![null](</docs/resources/images/Upload Certificate.png>)
 
 | **Fields**                                                                                                                     | **Description**                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -182,7 +182,7 @@ An expired certificate causes browsers to stop loading web content and display a
 1.  In the left pane, click **Certificates**.
 2. Click the **“+”** icon next to the certificate name. For example:
 
-![null](<../../resources/images/view_edit.png>)
+![null](</docs/resources/images/view_edit.png>)
 
 1. To remove the details. click the "**–**" icon next to the certificate name.
 
