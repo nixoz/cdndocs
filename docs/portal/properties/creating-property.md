@@ -5,11 +5,11 @@ To create a property, complete the Create a Property form with your server and c
 1. In the left pane, click **Properties**.
 2. At the top right of the Properties page, click the **Create Property** button. 
 
-![null](<../../resources/images/Create Property.png>)
+![null](</docs/resources/images/Create Property.png>)
 
 3. Complete the fields in the Create a Property form. Required fields are denoted by an asterisk (\*).
 
-![null](<../../resources/images/Create a Property.png>)
+![null](</docs/resources/images/Create a Property.png>)
 
 | **Fields** | **Description** |
 | ---------- | --------------- |

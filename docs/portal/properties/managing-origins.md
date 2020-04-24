@@ -9,19 +9,21 @@ Adding origins to your property tells CDN360 where to obtain the content you wan
 
 1. If you are creating, editing, or cloning a property and the Add Origin form is displayed, skip to step 2. Otherwise:
 
-<ul>a. In the left pane, click **Properties**.
-<br>b. On the Properties page, click the ID of a property.<br>
-     <u><ul>OR</ul></u>
-a. Click the **Origins** menu for the property you want to clone, and then select **Edit**.
-<br>b. Next to the **Version Number** field, click the **Edit** button.
+a. In the left pane, click **Properties**. <br/>
+b. On the Properties page, click the ID of a property.
 
-![null](<../../resources/images/Property - Edit Origins.png>)
+OR
+
+a. Click the **Origins** menu for the property you want to clone, and then select **Edit**.<br/>
+b. Next to the **Version Number** field, click the **Edit** button.
+
+![null](</docs/resources/images/Property - Edit Origins.png>)
 
 c. Under the **Origins** field, click the **Add Origin To List** link.
 
-2. Complete the fields in the Add Origin form. Required fields are denoted by an asterisk (*).
+1. Complete the fields in the Add Origin form. Required fields are denoted by an asterisk (*).
 
-> ![null](<../../resources/images/Add Origin Page.png>)
+> ![null](</docs/resources/images/Add Origin Page.png>)
 
 | **Fields** | **Description** |
 | ---------- | --------------- |
@@ -41,23 +43,25 @@ c. Under the **Origins** field, click the **Add Origin To List** link.
 
 ## Editing Origins
 
- A property origin can be edited only if the property has not been deployed to production. If you need to update a deployed property, either [undeploy](<../Properties/Undeploying a property.htm>) the property or [create](<../Properties/creating_a_property.htm>) a new property version.
+ A property origin can be edited only if the property has not been deployed to production. If you need to update a deployed property, either [undeploy](</docs/portal/properties/undeploying-property.md>) the property or [create](</docs/portal/properties/creating-property.md>) a new property version.
 
 1. In the left pane, click **Properties**.
 2. On the Properties page, click the ID of the property whose origin you want to edit.
-<u><ul>OR</ul></u>
-Click the **Actions** menu for the property whose origin you want to edit, and then select **Edit**.
+
+     OR
+
+     Click the **Actions** menu for the property whose origin you want to edit, and then select **Edit**.
 3. Next to the **Version Number** field, click the **Edit** button. If this button is disabled, it means the version has been deployed to production.
 
-![null](<../../resources/images/Property - Edit Origins.png>)
+![null](</docs/resources/images/Property - Edit Origins.png>)
 
 4. In the **Origins** field, click the **Edit** link for the origin you want to edit.
 
-![null](<../../resources/images/Viewing Origins-3.png>)
+![null](</docs/resources/images/Viewing Origins-3.png>)
 
 5. Make your changes in the Edit Origin form (see the table under Adding Origins). Required fields are denoted by an asterisk (\*).
 
-![null](<../../resources/images/Edit Origin Page.png>)
+![null](</docs/resources/images/Edit Origin Page.png>)
 
 
 6. Click **Edit Origin** to save your updated configuration.
@@ -66,21 +70,19 @@ Click the **Actions** menu for the property whose origin you want to edit, and t
 
 8. When a check mark appears at the end of the progress bar on the Configuration Validated screen, click **Go to Dashboard**.
 
-<!--?xml version="1.0" encoding="utf-8"?-->
-
 ## Viewing Origins
 
 1. In the left pane, click **Properties**.
 
 2. On the Properties page, click the ID of the property whose origin you want to view.
 
-<ul><u>OR</u>
+     OR
 
-Click the **Actions** menu for the property whose origin you want to view, and then select **Edit**.</ul>
+     Click the **Actions** menu for the property whose origin you want to view, and then select **Edit**.</ul>
 
 3. In the **Origins** field, click the **View **link.
 
-(<../../resources/images/Page - View Origins.png>)
+![null](</docs/resources/images/Page - View Origins.png>)
 
 4. View the origin in the View Origin dialog box. When you finish viewing, click the **Close** button.
  
@@ -94,15 +96,15 @@ Click the **Actions** menu for the property whose origin you want to view, and t
 
 3. At the right side of the **Version Number** field, click the **Edit **button.
 
-![null](<../../resources/images/Property Page.png>)
+![null](</docs/resources/images/Property Page.png>)
 
 4. At the right side of the **Origins** field, click the **Remove** link. 
 
-![null](<../../resources/images/Remove Link.png>)
+![null](</docs/resources/images/Remove Link.png>)
 
-<ul>The Remove Origins dialog box appears.</ul>
+     The Remove Origins dialog box appears.
 
-(<../../resources/images/origins/origin7.png>)
+![null](</docs/resources/images/origin7.png>)
 
-5. Click **Remove Origin** to remove this origin from your property.
-6. Exit the Property form.
+1. Click **Remove Origin** to remove this origin from your property.
+2. Exit the Property form.

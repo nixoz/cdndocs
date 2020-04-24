@@ -14,7 +14,7 @@ Properties are managed from the Properties page. To display this page, click **P
 
 The following figure shows the key elements on the page, and the table following the figure describes them.
 
-![null](<../../resources/images/Properties Page.png>)
+![null](</docs/resources/images/Properties Page.png>)
 
 | **Fields** | **Description** |
 | ---------- | --------------- |

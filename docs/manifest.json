@@ -131,6 +131,16 @@
           }
         ]
       },
+      { 
+        "title": "Edge Logic",
+        "heading": true,
+        "routes": [
+          {
+            "title": "Introduction",
+            "path": "/docs/edge-logic/intro.md"
+          }
+        ]
+      },
       { "title": "FAQ", "path": "/docs/faq.md" }
     ]
   }

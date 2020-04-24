@@ -1,26 +1,18 @@
-
 # Cloning Properties
 
 After a property version has been deployed to staging or production, it is locked from further changes and no additional edits are permitted. However, you can clone the version of your property to create a new version that you can edit.
 
 1. In the left pane, click **Properties**.
-2. On the Properties page, click the ID of the property you want to clone.<br>
 
-    <br>
-
-    <u>OR</u>
-
-    <br>
-
-    <br>
+    OR
 
     Click the **Actions** menu for the property you want to clone, and then select **Edit**.
 
-3. Next to the **Version Number** field, click the **Clone** button. 
+2. Next to the **Version Number** field, click the **Clone** button. 
 
-![null](<../../resources/images/Cloning Properties - Edit Button.png>)
+![null](</docs/resources/images/Cloning Properties - Edit Button.png>)
 
-4. The cloned property inherits the following fields from the original property. Change them as required. Required fields are denoted by an asterisk (\*).
+3. The cloned property inherits the following fields from the original property. Change them as required. Required fields are denoted by an asterisk (\*).
 
 | **Fields** | **Description** |
 | ---------- | --------------- |
@@ -34,10 +26,11 @@ Descriptione | Add a description to associate with your property.|
 | Advanced Settings | Use Advanced Settings to determine how content is cached,whether your website can be accessed from China, and whether a load balancer hash key should be used.|
 
 
-5. Click the **Save** button to save the cloned property. To validate the saved property at a later time, display the [Edit Property](<Editing Properties.htm>) form, and then click the **Save & Validate** button in the Edit Property form.<br>
+4. Click the **Save** button to save the cloned property. To validate the saved property at a later time, display the [Edit Property](</docs/portal/properties/editing-properties.md>) form, and then click the **Save & Validate** button in the Edit Property form.
 
-<u>OR</u>
+    OR
 
-Click the **Save & Validate** button followed by **OK** to save and validate the property. When the Validating Configuration pop-up appears, either wait for the message that the configuration has been successfully validated and is ready to deploy, or click the **Go to Dashboard** button to perform other tasks while validation continues in the background, and then click **Tasks** in the left pane to confirm that the property validated successfully.
-6. If the property validated successfully, you can [deploy](<Deploying Your Property.htm>) it.
+    Click the **Save & Validate** button followed by **OK** to save and validate the property. When the Validating Configuration pop-up appears, either wait for the message that the configuration has been successfully validated and is ready to deploy, or click the **Go to Dashboard** button to perform other tasks while validation continues in the background, and then click **Tasks** in the left pane to confirm that the property validated successfully.
+
+5. If the property validated successfully, you can [deploy](</docs/portal/properties/deploying-property.md>) it.
 

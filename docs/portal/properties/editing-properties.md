@@ -1,19 +1,12 @@
 
-<link href="../../resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
-
 # Editing Properties
 
 1. In the left pane, click **Properties**.
-2. On the Properties page, click the ID of the property you want to edit.<br>
+2. On the Properties page, click the ID of the property you want to edit.
+    
+    OR
 
-<br>
-<u>OR</u>
-
-<br>
-
-<br>
-
-Click the **Actions** menu for the property you want to edit, and then select **Edit**.
+    Click the **Actions** menu for the property you want to edit, and then select **Edit**.
 3. Next to the **Version Number** field, click the **Edit** button.
 4. Make your changes in the Edit Property form. Required fields are denoted by an asterisk (\*).
 
