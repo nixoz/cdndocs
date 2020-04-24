@@ -14,9 +14,11 @@ This directive modifies the response headers to the client. We made a few major 
 ```nginx
 policy=repeat|overwrite|preserve
 ```
-`overwrite`: If the header being added exists in the upstream response, the local configuration overrides the header value. If you want to remove a header, set the value to an empty string.
-`preserve`: If the header being added exists in the upstream response, the header value is not changed;
-`repeat`: (default) Add the header to the client response, regardless of whether the header exists in the upstream response.
+```overwrite```: If the header being added exists in the upstream response, the local configuration overrides the header value. If you want to remove a header, set the value to an empty string.
+
+```preserve```: If the header being added exists in the upstream response, the header value is not changed;
+
+```repeat```: (default) Add the header to the client response, regardless of whether the header exists in the upstream response.
 
 The policy parameter also supports variables; the value must be one of the three above.
 
@@ -24,10 +26,10 @@ The policy parameter also supports variables; the value must be one of the three
 
 | **"built-in" Header Name** | **Behavior** |
 | ---- | ---- |
-| `Cache-Control` | `repeat` |
-| `Link` | `repeat` |
-| `Last-Modified` | `overwrite` |
-| `ETag` | `overwrite` |
+| ```Cache-Control``` | ```repeat``` |
+| ```Link``` | ```repeat``` |
+| ```Last-Modified``` | ```overwrite``` |
+| ```ETag``` | ```overwrite``` |
 
 
 If needed, [proxy_hide_header](#proxy_hide_header) can be used to remove the "Cache-Control" or "Link" headers from the origin.
