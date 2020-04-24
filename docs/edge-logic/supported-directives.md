@@ -21,12 +21,14 @@ policy=repeat|overwrite|preserve
 The policy parameter also supports variables; the value must be one of the three above.
 
 **Limitation**: For the following "built-in" headers, the behavior is always fixed regardless of the configured policy:
-| "built-in" Header Name | Behavior |
+
+| **"built-in" Header Name** | **Behavior** |
 | ---- | ---- |
 | `Cache-Control` | `repeat` |
 | `Link` | `repeat` |
 | `Last-Modified` | `overwrite` |
 | `ETag` | `overwrite` |
+
 
 If needed, [proxy_hide_header](#proxy_hide_header) can be used to remove the "Cache-Control" or "Link" headers from the origin.
 
