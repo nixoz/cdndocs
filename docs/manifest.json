@@ -157,14 +157,13 @@
           },
           {
             "title": "Supported Directives",
-            "path": "/docs/edge-logic/supported directives.md"
+            "path": "/docs/edge-logic/supported-directives.md"
           },
           {
             "title": "FAQ",
             "path": "/docs/edge-logic/faq.md"
           }
         ]
-      },
-      { "title": "FAQ", "path": "/docs/faq.md" }
+      }
     ]
   }
