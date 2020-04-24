@@ -1,180 +1,108 @@
 
-<!--?xml version="1.0" encoding="utf-8"?-->
-
 # Managing Origins for Your Property
 
-Origins are your servers containing the content you want CDN360 to accelerate. Configuring origins allows CDN360 to communicate with your origin servers.
+Origins are your web servers containing the content you want CDN360 to accelerate. Configuring origins allows CDN360 to communicate with your origin servers.
 
-<!--?xml version="1.0" encoding="utf-8"?-->
+## Adding Origins to Your Property
 
-<link href="../../resources/TableStyles/Rows.css" rel="stylesheet" madcap:stylesheettype="table">
+Adding origins to your property tells CDN360 where to obtain the content you want to accelerate. Origins are servers you maintain that allow CDN360 to fetch their content.
 
-# Editing Origins
+1. If you are creating, editing, or cloning a property and the Add Origin form is displayed, skip to step 2. Otherwise:
 
-Origins are your web servers that CDN360 accesses to fetch your content. A property origin can be edited only if the property has not been deployed to production. If you need to update a deployed property, either [undeploy](<../Properties/Undeploying a property.htm>) the property or [create](<../Properties/creating_a_property.htm>) a new property version.
-
-1. In the left pane, click **Properties**.
-2. <span style="font-weight: normal;">On the Properties page</span>
-
-<span style="font-weight: normal;">, click the ID of the property whose origin you want to edit.</span>
-
-<br>
-
-<br>
-
-<u style="font-weight: normal;">OR</u>
-
-<br>
-
-<br>
-
-<span style="font-weight: normal;">Click the </span>
-
-**Actions**<span style="font-weight: normal;"> menu for the property whose origin you want to edit, and then select </span>
-
-**Edit**.
-3. Next to the **Version Number** field, click the **Edit** button. If this button is disabled, it means the version has been deployed to production.
-
-<!-- -->
+<ul>a. In the left pane, click **Properties**.
+<br>b. On the Properties page, click the ID of a property.<br>
+     <u><ul>OR</ul></u>
+a. Click the **Origins** menu for the property you want to clone, and then select **Edit**.
+<br>b. Next to the **Version Number** field, click the **Edit** button.
 
 ![null](<../../resources/images/Property - Edit Origins.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
+c. Under the **Origins** field, click the **Add Origin To List** link.
 
-1. In the **Origins** field, click the **Edit** link for the origin you want to edit.
+2. Complete the fields in the Add Origin form. Required fields are denoted by an asterisk (*).
 
-<!-- -->
+> ![null](<../../resources/images/Add Origin Page.png>)
+
+| **Fields** | **Description** |
+| ---------- | --------------- |
+| Auto Detect | If you are creating a new property and want CDN360 to detect an origin automatically, click this button. If you accept the origin name, it appears in the Origin Name field. This button does not appear when editing or cloning a property.|
+| Origin Name | To manually enter an origin name, enter it in this field.|
+| Servers | Enter a hostname or IP address of the primary HTTP or HTTPS server from which CDN360 is expected to retrieve your content. After entering the server hostname or IP address, click Validate to verify that the server information is correct and reachable. <br> To add more servers, click the Add new + link. To remove a server, click the Remove link.</br>
+| Backup Servers | Enter a hostname or IP address of the backup HTTP or HTTPS server that CDN360 will query for content if the primary server is not available. When requests are made, CDN360 queries the primary server(s) you specified in your configuration. If the primary server(s) are down, CDN360 will query the backup servers for the requested information. <cr here>?? Click Add new + to specify the backup server, and then click Validate to verify. To add more backup servers, click the Add new + link again. To remove a backup server, click the Remove link.|
+| **Advanced Settings** |
+| Supported Protocols | Select the protocol that your origin server supports. Choices are: <li>HTTP = use HTTP only.<li>HTTPS = use HTTPS only.<br><li>Both = use HTTP and HTTPS. (*default*May).</li></br>|
+| Supported SNI | Select whether your server supports Server Name Indication (SNI). Choices are:<br><li>True = server supports SNI. (*default*)<li>False = server does not support SNI.</li></br> |
+| Verify Origin | Select whether CDN360 performs backend verification of the TLS certificate on the origin servers. Choices are:<br><li>True = perform backend verification.<li>False = do not perform backend verification. (*default*).</li></br>|
+| Host Header | Enter a hostname that CDN will use to contact the origin.|
+| Direct Connection | There may be times CDN servers fetch content from the origin server. This option allows CDN360 to search other CDN360 servers where the content is cached. Choices are:<br><li>No Direct = always try a parent cache first to fetch missing content.<br><li>Auto = CDN360 cache server uses resource- and performance-based metrics to decide whether to go to the origin directly or to a parent cache. (*default*)<br><li>Always Direct = select this option if you want CDN360 to always go directly to the origin server to fetch content.</li></li></li></br>|
+| Authentication | Enables authentication for Amazon Web Services (AWS) S3 servers. Choices are:<br><li>None = no authentication. (*default*) <br><li>AWS S3 = enables authentication for AWS S3 servers. If you select this choice, complete the following fields:<ul><li>Region = select a region from the drop-down list.<br><li>Access Key = enter the AWS access key used to authenticate requests on the AWS server.<br><li>Secret Key = enter the AWS secret key used to authenticate requests on the AWS server.</ul></ul></ul></ul></br>
+
+> 3. Click **Add Origin**.
+
+## Editing Origins
+
+ A property origin can be edited only if the property has not been deployed to production. If you need to update a deployed property, either [undeploy](<../Properties/Undeploying a property.htm>) the property or [create](<../Properties/creating_a_property.htm>) a new property version.
+
+1. In the left pane, click **Properties**.
+2. On the Properties page, click the ID of the property whose origin you want to edit.
+<u><ul>OR</ul></u>
+Click the **Actions** menu for the property whose origin you want to edit, and then select **Edit**.
+3. Next to the **Version Number** field, click the **Edit** button. If this button is disabled, it means the version has been deployed to production.
+
+![null](<../../resources/images/Property - Edit Origins.png>)
+
+4. In the **Origins** field, click the **Edit** link for the origin you want to edit.
 
 ![null](<../../resources/images/Viewing Origins-3.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
-
-
-5\. Make your changes in the Edit Origin form. Required fields are denoted by an asterisk (\*).
+5. Make your changes in the Edit Origin form (see the table under Adding Origins). Required fields are denoted by an asterisk (\*).
 
 ![null](<../../resources/images/Edit Origin Page.png>)
 
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
 
-| **Fields**                                                                    | **Description**                                                               |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-|                                                                               |                                                                               |
-| Servers                                                                       |                                                                               |
-| Backup Servers                                                                |                                                                               |
-| **Advanced Settings**                                                         |                                                                               |
-| Supported Protocol                                                            | Select the protocol that your origin server supports. Choices are:            |
-| Support SNI                                                                   |                                                                               |
-| Verify Origin                                                                 |                                                                               |
-| Host Header                                                                   | Enter a hostname that CDN will use to contact the origin.                     |
-| Direct Connection                                                             |                                                                               |
-| Authentication                                                                | Enables authentication for Amazon Web Services (AWS) S3 servers. Choices are: |
-|                                                                               |                                                                               |
+6. Click **Edit Origin** to save your updated configuration.
 
-6\. Click **Edit Origin** to save your updated configuration.
+7. Click **Save & Validate** followed by **OK**. The Configuration Validated screen shows the validation progress.
 
-7\. Click **Save & Validate** followed by **OK**. The Configuration Validated screen shows the validation progress.
-
-8\. When a check mark appears at the end of the progress bar on the Configuration Validated screen, click **Go to Dashboard**.
+8. When a check mark appears at the end of the progress bar on the Configuration Validated screen, click **Go to Dashboard**.
 
 <!--?xml version="1.0" encoding="utf-8"?-->
 
-# Removing Origins
+## Viewing Origins
+
+1. In the left pane, click **Properties**.
+
+2. On the Properties page, click the ID of the property whose origin you want to view.
+
+<ul><u>OR</u>
+
+Click the **Actions** menu for the property whose origin you want to view, and then select **Edit**.</ul>
+
+3. In the **Origins** field, click the **View **link.
+
+(<../../resources/images/Page - View Origins.png>)
+
+4. View the origin in the View Origin dialog box. When you finish viewing, click the **Close** button.
+ 
+## Removing Origins
 
 **Note**: You can remove property origins only if the origin has not been deployed to staging or production.
 
 1. In the left pane, click **Properties**.
+
 2. On the Properties page, click the ID of the property whose origin you want to remove. The Property form appears.
 
-<!-- -->
-
-1. At the right side of the **Version Number** field, click the **Edit **button.
-
-<!-- -->
+3. At the right side of the **Version Number** field, click the **Edit **button.
 
 ![null](<../../resources/images/Property Page.png>)
 
-1. At the right side of the **Origins** field, click the **Remove** link. 
-
-<!-- -->
+4. At the right side of the **Origins** field, click the **Remove** link. 
 
 ![null](<../../resources/images/Remove Link.png>)
 
-The Remove Origins dialog box appears.
+<ul>The Remove Origins dialog box appears.</ul>
 
-![null](<../../resources/images/origins/origin7.png>)
+(<../../resources/images/origins/origin7.png>)
 
-1. Click **Remove Origin** to remove this origin from your property.
-2. Exit the Property form.
-
-<!-- -->
-
-<!--?xml version="1.0" encoding="utf-8"?-->
-
-# Viewing and Editing Origins
-
-You can view the configuration details of your origins from the Properties section of CDN360.
-
-## Viewing Origins
-
-To view origin details, complete the following steps.
-
-1. Log in to the CDN360 portal and select the **Properties **link.
-2. Click the property you want to view. The property configuration page displays.
-3. Navigate to the Origins section, and click the **View **link. The View Origin details screen displays.
-
-<!-- -->
-
-![null](<../../resources/images/origin_remove.png>)
-
-## Editing Origins
-
-**Note:** Your property origins can only be edited if the property has not been deployed to a staging or production environment. If you need to update a deployed property, you can create a new property version.
-
-To edit your origins, complete the following steps.
-
-1. Log in to the CDN360 portal and select the **Properties** link.
-2. Click the property you want to view. The Property configuration page displays.
-3. Click the **Edit** button. The Edit link now appears on the properties configuration page.
-
-<!-- -->
-
-> ![null](<../../resources/images/origins/origin5.png>)
-
-4\. Click the **Edit** link. The Edit Origin form appears.
-
-![null](<../../resources/images/origins/origin6.png>)
-
-5\. Make any origin configuration changes required, including adding additional origin servers.
-
-6\. Click **Edit Origin** to save your updated configuration.
-
-<!--?xml version="1.0" encoding="utf-8"?-->
-
-# Viewing Origins
-
-1. In the left pane, click **Properties**.
-2. On the Properties page, click the ID of the property whose origin you want to view.<br>
-
-<br>
-
-<u>OR</u>
-
-<br>
-
-<br>
-
-Click the **Actions** menu for the property whose origin you want to view, and then select **Edit**.
-3. In the **Origins** field, click the **View **link. <br>
-
-
-<!-- -->
-
-![null](<../../resources/images/Page - View Origins.png>)
-
-<span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
-1. View the origin in the View Origin dialog box. When you finish viewing, click the **Close** button.
-
-<!-- -->
-
+5. Click **Remove Origin** to remove this origin from your property.
+6. Exit the Property form.

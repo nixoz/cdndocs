@@ -7,15 +7,9 @@ A property version must be validated before it can be deployed to staging and/or
 1. In the left pane, click **Tasks**.
 2. To view validation tasks, keep the **Validation** tab displayed.
 
-<!-- -->
-
 > ![null](<../../resources/images/Validations_Overview.png>)
 > 
-> <span style="color: #708090; font-size: 9pt;">(click to enlarge)</span>
-
-1. Click an ID or task name to display the details for that property.
-
-<!-- -->
+3. Click an ID or task name to display the details for that property.
 
 **Note:** To filter tasks, type characters in the **Search** field at the top-left side and press the Enter key. Tasks that do not contain the typed characters are hidden. Filtering is not case-sensitive. To remove the filter, click the **Reset** button.
 

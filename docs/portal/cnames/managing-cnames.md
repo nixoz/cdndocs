@@ -7,3 +7,10 @@ CNAMEs are managed from the CNAME page. Using this page, you define CNAMEs to w
 The following figure shows the key elements on the page, and the table following the figure describes them.
 
 ![null](<../../resources/images/CNAMES_Overview.png>)
+
+| **Fields** | **Description** |
+| ---------- | --------------- |
+| 1 | To filter CNAMEs, type characters in this field and then press the Enter key. All CNAMEs that do not contain the typed characters are hidden. Filtering is not case-sensitive. To remove the filter, click the **x** icon at the right side of the search field. |
+| 2 | Each CNAME appears on its own row. |
+| 3 | The **Actions** drop-down list on each row has options to edit a CNAME?? and delete a CNAME??. |
+| 4 | The **Create CNAME** button allows you to create?? new CNAMEs.|
