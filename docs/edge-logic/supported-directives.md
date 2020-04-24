@@ -7,7 +7,7 @@ Each non-proprietary directive includes a direct link to the official NGINX docu
 In the following list, the "standard" directives are available to all customers, and they should cover the most common use cases. The "advanced" ones are usually more resource -consuming and they will be granted on a case-by-case basis. Please contact customer service if you need one or more of them.
 
 
-- ### <a id="add_header"></a>[add_header](http://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header) (standard)
+#### [add_header](http://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header) (standard)
 
 This directive modifies the response headers to the client. We made a few major changes to the open-source version:
 1. The following new parameter has been introduced to control the behavior more precisely:
@@ -21,12 +21,12 @@ policy=repeat|overwrite|preserve
 The policy parameter also supports variables; the value must be one of the three above.
 
 **Limitation**: For the following "built-in" headers, the behavior is always fixed regardless of the configured policy:
-|"built-in" Header Name|Behavior|
-|-|-|
-|`Cache-Control`|`repeat`|
-|`Link`|`repeat`|
-|`Last-Modified`|`overwrite`|
-|`ETag`|`overwrite`|
+| "built-in" Header Name | Behavior |
+| ---- | ---- |
+| `Cache-Control` | `repeat` |
+| `Link` | `repeat` |
+| `Last-Modified` | `overwrite` |
+| `ETag` | `overwrite` |
 
 If needed, [proxy_hide_header](#proxy_hide_header) can be used to remove the "Cache-Control" or "Link" headers from the origin.
 
@@ -51,35 +51,35 @@ if ($arg_debug = cache_status)
 add_header X-Cache-Status $upstream_cache_status policy=$cache_status_method;
 ```
 
-- ### <a id="allow"></a>[allow](http://nginx.org/en/docs/http/ngx_http_access_module.html#allow) (standard, ETA: July 2020)
+#### [allow](http://nginx.org/en/docs/http/ngx_http_access_module.html#allow) (standard, ETA: July 2020)
 
 Allows access for the specified network or address. (Work in progress to make this only apply on edge.)
 
 
-- ### <a id="auth_request"></a>[auth_request](http://nginx.org/en/docs/http/ngx_http_auth_request_module.html#auth_request) (advanced)
+#### [auth_request](http://nginx.org/en/docs/http/ngx_http_auth_request_module.html#auth_request) (advanced)
 
 Enables authorization based on the result of a subrequest and sets the URI to which the subrequest will be sent. No change to the public version. 
 
 
-- ### <a id="auth_request_set"></a>[auth_request_set](http://nginx.org/en/docs/http/ngx_http_auth_request_module.html#auth_request_set) (advanced)
+#### [auth_request_set](http://nginx.org/en/docs/http/ngx_http_auth_request_module.html#auth_request_set) (advanced)
 
 Sets the request variable to the given value after the authorization request completes. No change to the public version. 
 
 
-- ### <a id="break"></a>[break](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#break) (standard)
+#### [break](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#break) (standard)
 
 Stops processing the current set of ngx_http_rewrite_module directives. No change to the public version. 
 
 
-- ### <a id="deny"></a>[deny](http://nginx.org/en/docs/http/ngx_http_access_module.html#deny) (standard, ETA: July 2020)
+#### [deny](http://nginx.org/en/docs/http/ngx_http_access_module.html#deny) (standard, ETA: July 2020)
 
 Denies access for the specified network or address. (Work in progress to make this only apply on edge.)
 
-- ### <a id="custom_log_field"></a>custom_log_field (CDN360 Proprietary, advanced, ETA: May 2020)
+#### custom_log_field (CDN360 Proprietary, advanced, ETA: May 2020)
 
-**Syntax**:    custom_log_field {custom log field id} {value or variable};
-**Default**:    -
-**Context**:  http, server, location, if in location
+**Syntax**: ```custom_log_field {custom log field id} {value or variable};```<br/>
+**Default**: ```-```<br/>
+**Context**: ```http, server, location, if in location```
 
 This directive allows the users to add up to 2 customized fields into the access log. They can be referred to by the keywords "custom1" and "custom2" when you [configure the format](https://docs.google.com/document/d/155m9F0oFIDXRLeFmLqbdb0gWiHAyTWB8rPLWdRVGXoI/edit#heading=h.owglsmu6p2rb) of the download log, or using our [advanced traffic analysis](https://obd.quantil.com) tool.
 
