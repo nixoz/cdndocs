@@ -14,10 +14,8 @@ For more information about these two directives, please refer to the NGINX docum
 ![null](</docs/resources/images/edge-logic/helloworld.png>)
 
 If you use the [API to create the property](http://cdn360doc.quantil.com/apidocs/api.html#operation/createProperty), then the following is the complete JSON of the property configuration:
-<table>
-  <tr><strong>testdomain.json :</strong></tr>
-  <tr>
 
+```testdomain.json :```
 ```json
 {
   "name":"Hello World Property",
@@ -30,8 +28,6 @@ If you use the [API to create the property](http://cdn360doc.quantil.com/apidocs
   }
 } 
 ```
-</tr>
-</table>
 
 Note: You must enter the entire Edge Logic code in one line following the [JSON string escaping](https://www.freeformatter.com/json-escape.html) syntax. If you configure the acceleration hostname to be [www.testdomain.com](www.testdomain.com) as shown in the JSON above, and then deploy the property to the staging environment, you can use a cURL command to perform a test. The result should resemble the following:
 
