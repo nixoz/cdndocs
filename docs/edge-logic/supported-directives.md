@@ -101,8 +101,8 @@ Defines the URI that will be shown for the specified errors. No change to the pu
 **Context**:  http, server, location, if in location
 
 This is a directive to perform some common encoding, decoding, hash, hash-mac, encryption, decryption and comparison algorithms. It is added to the [rewrite module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html).  Supported functions are:
-| Type | Name | Syntax |
-|-|-|--
+| **Type** | **Name** | **Syntax** |
+|-|-|--| 
 | hash | **SHA256**, **MD5**|```eval_func $output SHA256 $input;```|
 |BASE64<br>codec|BASE64_ENCODE<br>**BASE64_DECODE**|```eval_func $output BASE64_ENCODE $input;```|
  |URL<br>codec| URL_ENCODE<br>**URL_DECODE**|```eval_func $output URL_ENCODE $input;```|
