@@ -138,6 +138,30 @@
           {
             "title": "Introduction",
             "path": "/docs/edge-logic/intro.md"
+          },
+          {
+            "title": "Hello World",
+            "path": "/docs/edge-logic/hello-world.md"
+          },
+          {
+            "title": "Simple Caching",
+            "path": "/docs/edge-logic/simple-caching.md"
+          },
+          {
+            "title": "Multiple Origins",
+            "path": "/docs/edge-logic/multiple-origins.md"
+          },
+          {
+            "title": "Staging Environment",
+            "path": "/docs/edge-logic/staging-environment.md"
+          },
+          {
+            "title": "Supported Directives",
+            "path": "/docs/edge-logic/supported directives.md"
+          },
+          {
+            "title": "FAQ",
+            "path": "/docs/edge-logic/faq.md"
           }
         ]
       },
