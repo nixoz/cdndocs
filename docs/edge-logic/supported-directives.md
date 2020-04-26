@@ -112,8 +112,8 @@ Defines the URI that will be shown for the specified errors. No change to the pu
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:    eval_func $result {function name} {parameters};
-**Default**:    -
+**Syntax**:    eval_func $result {function name} {parameters}; <br/>
+**Default**:    - <br/>
 **Context**:  http, server, location, if in location
 
 This is a directive to perform some common encoding, decoding, hash, hash-mac, encryption, decryption and comparison algorithms. It is added to the [rewrite module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html).  Supported functions are:
@@ -196,8 +196,8 @@ Sets configuration depending on a request URI. No change to the public version.
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:    origin_connect_timeout time;
-**Default**:    origin_connect_timeout 60s;
+**Syntax**:    origin_connect_timeout time; <br/>
+**Default**:    origin_connect_timeout 60s; <br/>
 **Context**:  http, server, location
 
 This is a wrapper of the [proxy_connect_timeout](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_connect_timeout) directive. It defines a timeout for establishing a connection with the origin server. The value is limited to an integer in [1,30] followed by ‘s’.
@@ -206,8 +206,8 @@ This is a wrapper of the [proxy_connect_timeout](http://nginx.org/en/docs/http/n
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:    origin_header_modify field value policy=value qtl_if(condition);
-**Default**:    -
+**Syntax**:    origin_header_modify field value policy=value qtl_if(condition); <br/>
+**Default**:    - <br/>
 **Context**:  http, server, location, if in location
 
 This directive can be used to add, delete, or overwrite the response header fields from the origin **before** any other processing. The directive supports NGINX variables.
@@ -271,8 +271,8 @@ If the URI is omitted, the variable ```$request_uri``` (with all the query strin
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:   origin_read_timeout time;
-**Default**:  origin_read_timeout 60s;
+**Syntax**:   origin_read_timeout time; <br/>
+**Default**:  origin_read_timeout 60s; <br/>
 **Context**:  http, server, location
 
 This is a wrapper of the [proxy_read_timeout](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_read_timeout) directive. It defines a timeout for reading a response from the origin server. The value is limited to an integer in [1,600] followed by ‘s’ OR an integer in [1,10] followed by ‘m’. 
@@ -282,8 +282,8 @@ This is a wrapper of the [proxy_read_timeout](http://nginx.org/en/docs/http/ngx_
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:    origin_send_timeout time;
-**Default**:    origin_send_timeout 60s;
+**Syntax**:    origin_send_timeout time; <br/>
+**Default**:    origin_send_timeout 60s; <br/>
 **Context**:  http, server, location
 
 This is a wrapper of the [proxy_send_timeout](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_send_timeout) directive. It sets a timeout for transmitting a request to the origin server. The value is limited to an integer in [1,600] followed by ‘s’ OR an integer in [1,10] followed by ‘m’.
@@ -292,8 +292,8 @@ This is a wrapper of the [proxy_send_timeout](http://nginx.org/en/docs/http/ngx_
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:  origin_set_header field value qtl_if(condition);
-**Default**: origin_set_header host $host;
+**Syntax**:  origin_set_header field value qtl_if(condition); <br/>
+**Default**: origin_set_header host $host; <br/>
 **Contexts**: http, server, location, if in location
 
 This is a wrapper of the [proxy_set_header](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_set_header) directive to allow redefining (overwriting) or appending fields to the request header passed to the origin server. The following changes were made to the open-source version:
@@ -338,8 +338,8 @@ Specify the HTTPS methods whose response will be cached.
 
 <span class="badge">standard</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:        proxy_cache_min_age time;
-**Default**:        proxy_cache_min_age 0s;
+**Syntax**:        proxy_cache_min_age time; <br/>
+**Default**:        proxy_cache_min_age 0s; <br/>
 **Context**:       http, server, location, if in location
 
 Description:
@@ -388,8 +388,8 @@ Sets caching time for different response codes. Changing the public version to e
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**: proxy_cache_vary on | off;
-**Default**: proxy_cache_vary off;
+**Syntax**: proxy_cache_vary on | off; <br/>
+**Default**: proxy_cache_vary off; <br/>
 **Context**: http, server, location
 
 If proxy_cache_vary is "on", the CDN360 cache servers honor the "Vary" response header from the origin and cache different variations separately. However, the varied contents must be purged using "directory purge". An error will be returned if "file purge" is used for varied contents.
@@ -420,8 +420,8 @@ Sets response header fields that will not be passed to the client. No change to 
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax:** proxy_ignore_cache_control directives…;
-**Default:** none
+**Syntax:** proxy_ignore_cache_control directives…; <br/>
+**Default:** none <br/>
 **Contexts:** http, server, location, if in location 
 
 Disables processing of certain cache-control directives in the proxy server. The following directives can be ignored: 
@@ -493,8 +493,8 @@ Enables the specified protocols for requests to a proxied HTTPS server. No chang
 
 <span class="badge">standard</span><span class="badge">CDN360 Proprietary</span><span class="badge">ETA June 2020</span>
 
-**Syntax:** realtime_log_sample_rate {sample rate};
-**Default:** none
+**Syntax:** realtime_log_sample_rate {sample rate}; <br/>
+**Default:** none <br/>
 **Contexts:** http, server, location, if in location
 
 This CDN360-proprietary directive sets the sample rate of the [Real-Time Log](https://docs.google.com/document/d/1ju14e1arEPLsGFmxaYExjcdO7bwdYQ-m4h7tdbqpEZI/edit#heading=h.tbbol2vdsupw). The parameter value can be an integer in [0,65536] . 0 turns of the real time logging. Variable is supported. By default, the sample rate is set for the entire site by the ```realTimeLog``` field of the property JSON. This directive can be used to change the sample rate or turn off real-time logging selectively for some locations.
@@ -528,8 +528,8 @@ Allows access if all (all) or at least one (any) of the ngx_http_access_module, 
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax:** sanitize_accept_encoding enc1 enc2 … ;
-**Default:** sanitize_accept_encoding gzip;
+**Syntax:** sanitize_accept_encoding enc1 enc2 … ; <br/>
+**Default:** sanitize_accept_encoding gzip; <br/>
 **Contexts:** http, server
 
 This directive processes the incoming "Accept-Encoding" header to consolidate the value. The goal is to increase the cache efficiency and hit ratio by limiting the maximum number of variations due to the "Accept-Encoding" header to 5.
@@ -580,8 +580,8 @@ Sets the size of the slice when fetching large files from the origin. We made a 
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax:** sorted_querystring_filter_parameter param1 param2 … ;
-**Default:** none
+**Syntax:** sorted_querystring_filter_parameter param1 param2 … ; <br/>
+**Default:** none <br/>
 **Contexts:** http, server, location, if in location
 
 Removes some query parameters from the variable ```$sorted_querystring_args```.
