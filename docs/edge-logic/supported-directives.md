@@ -158,7 +158,7 @@ Enables gzipping of responses for the specified MIME types in addition to “tex
 
 <span class="badge">standard</span>
 
-Control the server behavior based on the specified condition. No change to the public version, but [use with caution](#ifcaution)! 
+Control the server behavior based on the specified condition. No change to the public version, but [use with caution](multiple-origins.md#ifcaution)! 
 
 
 ### [include](http://nginx.org/en/docs/ngx_core_module.html#include)
