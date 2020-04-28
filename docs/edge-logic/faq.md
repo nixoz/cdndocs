@@ -16,7 +16,7 @@ set $cache_misc "hdr1=$http_header1&hdr2=$http_header2";
 ```
 ### HTTP Header Manipulation
 
-If you need to add/modify/delete some headers to the request to the origin, you need the "[origin_set_header](#origin_set_header)" directive. For example:
+If you need to add/modify/delete some headers to the request to the origin, you need the [`origin_set_header`](</docs/edge-logic/supported-directives.md#origin_set_header>) directive. For example:
 ```nginx
 origin_set_header CDN-Name Quantil;
 ```
@@ -24,21 +24,21 @@ In particular, this is the code to send the client's IP address to the origin se
 ```nginx
 origin_set_header Client-IP $client_real_ip;
 ```
-If you need to add/modify/delete some headers to the response to clients, you need to use the "[add_header](#add_header" directive. For example:
+If you need to add/modify/delete some headers to the response to clients, you need to use the [`add_header`](</docs/edge-logic/supported-directives.md#add_header>) directive. For example:
 ```nginx
 add_header CDN-Name Quantil;
 ```
-### The support (and non-support) of "Vary"
+### The support (and non-support) of `Vary`
 
-CDN360 servers by default remove any "Vary" header in the response from origin servers. Therefore, every URL will have no more than one cached version. If you want to have different versions cached based on some request header or cookie values, put them explicitly into the cache key using the `$cache_misc` variable mentioned above. For example:
+CDN360 servers by default remove any `Vary` header in the response from origin servers. Therefore, every URL will have no more than one cached version. If you want to have different versions cached based on some request header or cookie values, put them explicitly into the cache key using the `$cache_misc` variable mentioned above. For example:
 ```nginx
 set $cache_misc "ae=$http_accept_encoding";
 ```
-If you want to send a "Vary" header to the clients to make sure they cache different variations properly, you can use the "[add_header](#add_header)" directive to do so. If you have to pass the "Vary" header from the origin to the client, the following configuration can be used to "undo" the default removal of the header:
+If you want to send a `Vary` header to the clients to make sure they cache different variations properly, you can use the [`add_heade`](</docs/edge-logic/supported-directives.md#add_header>)" directive to do so. If you have to pass the `Vary` header from the origin to the client, the following configuration can be used to "undo" the default removal of the header:
 ```nginx
 origin_header_modify Vary "" policy=preserve;
 ```
-However, preserving a "Vary" header prevents the response from being cached because "[proxy_cache_vary](#proxy_cache_vary) off" is configured by default. If it is absolutely important for the CDN360 servers to cache multiple versions based on the Vary header, contact our customer support to obtain permission to set `proxy_cache_vary on`.
+However, preserving a `Vary` header prevents the response from being cached because [`proxy_cache_vary`](</docs/edge-logic/supported-directives.md#proxy_cache_vary>)' off' is configured by default. If it is absolutely important for the CDN360 servers to cache multiple versions based on the `Vary` header, contact our customer support to obtain permission to set `proxy_cache_vary on`.
 
 ### How to chase redirections from origin?
 
