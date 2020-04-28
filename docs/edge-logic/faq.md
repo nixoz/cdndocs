@@ -38,7 +38,7 @@ If you want to send a `Vary` header to the clients to make sure they cache diffe
 ```nginx
 origin_header_modify Vary "" policy=preserve;
 ```
-However, preserving a `Vary` header prevents the response from being cached because [`proxy_cache_vary`](</docs/edge-logic/supported-directives.md#proxy_cache_vary>)` off` is configured by default. If it is absolutely important for the CDN360 servers to cache multiple versions based on the `Vary` header, contact our customer support to obtain permission to set `proxy_cache_vary on`.
+However, preserving a `Vary` header prevents the response from being cached because [`proxy_cache_vary`](</docs/edge-logic/supported-directives.md#proxy_cache_vary>)`off` is configured by default. If it is absolutely important for the CDN360 servers to cache multiple versions based on the `Vary` header, contact our customer support to obtain permission to set `proxy_cache_vary on`.
 
 ### How to chase redirections from origin?
 
