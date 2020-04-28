@@ -57,7 +57,9 @@ include ../conf/cs_location_level_follow_redirect.conf;
 The Chinese Ministry of Industry and Information Technology (MIIT) requires every domain served from a server in Mainland China to have a record in its system. This is called [ICP Beian (备案)](http://www.beian.miit.gov.cn/). For certain domains, a [Security Beian](http://www.beian.gov.cn/) is also required. As a CDN provider, we cannot use our servers in China to serve domains without ICP Beian. Any violation may result in our China-based servers being blocked. Customers are responsible for filing and obtaining Beian for any domain that needs local delivery in China. We can provide consulting services to assist with this process. For domains without Beian, we can use servers located in close proximity to Mainland China (for example, Hong Kong, Korea and Japan) to deliver content to clients in Mainland China; however, the performance will not be as good as local delivery.
 
 Assuming you have a domain with ICP Beian, perform the following steps to enable local delivery in Mainland China: 
+
 1. Create a [CNAME](http://cdn360doc.quantil.com/apidocs/api.html#operation/createCNAME) with "hasBeian" set to true, and use this CNAME for the domain to be accelerated. This ensures that GSLB will direct traffic of this domain to our servers in Mainland China. 
+
 2. Set "hasBeian" to true in the [property](http://cdn360doc.quantil.com/apidocs/api.html#operation/createProperty) of this domain. This ensures the configuration will be deployed to servers in China and that those servers will handle client requests to this domain. 
 
 ### How to support websocket?
