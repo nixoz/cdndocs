@@ -7,7 +7,7 @@ Each non-proprietary directive includes a direct link to the official NGINX docu
 In the following list, the "standard" directives are available to all customers, and they should cover the most common use cases. The "advanced" ones are usually more resource -consuming and they will be granted on a case-by-case basis. Please contact customer service if you need one or more of them.
 
 
-### [add_header](http://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header)
+### [`add_header`](http://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header)
 
 <span class="badge">standard</span>
 
@@ -57,7 +57,7 @@ if ($arg_debug = cache_status)
 add_header X-Cache-Status $upstream_cache_status policy=$cache_status_method;
 ```
 
-### [allow](http://nginx.org/en/docs/http/ngx_http_access_module.html#allow)
+### [`allow`](http://nginx.org/en/docs/http/ngx_http_access_module.html#allow)
 
 <span class="badge">standard</span><span class="badge">ETA: July 2020</span>
 
@@ -91,12 +91,12 @@ Stops processing the current set of ngx_http_rewrite_module directives. No chang
 
 Denies access for the specified network or address. (Work in progress to make this only apply on edge.)
 
-### custom_log_field
+### `custom_log_field`
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span><span class="badge">ETA: July 2020</span>
 
-**Syntax**: ```custom_log_field {custom log field id} {value or variable};```<br/>
-**Default**: ```-```<br/>
-**Context**: ```http, server, location, if in location```
+**Syntax**: `custom_log_field {custom log field id} {value or variable};`<br/>
+**Default**: `-`<br/>
+**Context**: http, server, location, if in location
 
 This directive allows the users to add up to 2 customized fields into the access log. They can be referred to by the keywords "custom1" and "custom2" when you [configure the format](https://docs.google.com/document/d/155m9F0oFIDXRLeFmLqbdb0gWiHAyTWB8rPLWdRVGXoI/edit#heading=h.owglsmu6p2rb) of the download log, or using our [advanced traffic analysis](https://obd.quantil.com) tool.
 
@@ -108,12 +108,12 @@ This directive allows the users to add up to 2 customized fields into the access
 Defines the URI that will be shown for the specified errors. No change to the public version. 
 
 
-### [eval_func](https://docs.google.com/document/d/1T4NVOiiv_OlYA6nzDcoTm7MpQMBz5E1nr-W78_7GNiQ/edit#bookmark=id.ff3eprwz0chu)
+### [`eval_func`](https://docs.google.com/document/d/1T4NVOiiv_OlYA6nzDcoTm7MpQMBz5E1nr-W78_7GNiQ/edit#bookmark=id.ff3eprwz0chu)
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:    eval_func $result {function name} {parameters}; <br/>
-**Default**:    - <br/>
+**Syntax**: `eval_func $result {function name} {parameters};` <br/>
+**Default**: `-` <br/>
 **Context**:  http, server, location, if in location
 
 This is a directive to perform some common encoding, decoding, hash, hash-mac, encryption, decryption and comparison algorithms. It is added to the [rewrite module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html).  Supported functions are:
@@ -154,11 +154,11 @@ Enables or disables adding or modifying the “Expires” and “Cache-Control�
 Enables gzipping of responses for the specified MIME types in addition to “text/html”. No change to the public version. We always have gzip on. 
 
 
-### [if](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#if)
+### [`if`](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#if)
 
 <span class="badge">standard</span>
 
-Control the server behavior based on the specified condition. No change to the public version, but [use with caution](multiple-origins.md#ifcaution)! 
+Control the server behavior based on the specified condition. No change to the public version, but [use with caution](</docs/edge-logic/multiple-origins.md#ifcaution>)! 
 
 
 ### [include](http://nginx.org/en/docs/ngx_core_module.html#include)
@@ -245,19 +245,19 @@ Although CDN360 has hierarchical cache structure, the directive changes the head
 
 <span class="badge">standard</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**: ```origin_limit_rate rate;```<br>
-**Default**: ```origin_limit_rate 0;```<br>
-**Context**: ```http, server, location```
+**Syntax**: `origin_limit_rate rate;`<br>
+**Default**: `origin_limit_rate 0;`<br>
+**Context**: http, server, location
 
 This a wrapper of the [proxy_limit_rate](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_limit_rate) directive. It limits the speed of reading the response from the origin server.
 
-### origin_pass
+### `origin_pass`
 
 <span class="badge">standard</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**: ```origin_pass _origin_name[URI]_;```<br>
-**Default**: ```none```<br>
-**Context**: ```location, if in location```
+**Syntax**: `origin_pass _origin_name[URI];`<br>
+**Default**: none <br>
+**Context**: location, if in location
 
 This directive specifies the origin to fetch the content. It is a wrapper of the NGINX [proxy_pass](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass) directive. It takes one parameter that is an origin name specified in the "origins" field of the property JSON. The origin name can be optionally followed by a URI. Variables can be used in the URI. Examples:
 ```nginx
@@ -267,23 +267,23 @@ origin_pass my_origin/abc/$uri;
 ```
 If the URI is omitted, the variable ```$request_uri``` (with all the query strings) is appended automatically when accessing the origin.
 
-### origin_read_timeout
+### `origin_read_timeout`
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:   origin_read_timeout time; <br/>
-**Default**:  origin_read_timeout 60s; <br/>
+**Syntax**: `origin_read_timeout time;` <br/>
+**Default**:  `origin_read_timeout 60s;` <br/>
 **Context**:  http, server, location
 
 This is a wrapper of the [proxy_read_timeout](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_read_timeout) directive. It defines a timeout for reading a response from the origin server. The value is limited to an integer in [1,600] followed by ‘s’ OR an integer in [1,10] followed by ‘m’. 
 
 
-### origin_send_timeout
+### `origin_send_timeout`
 
 <span class="badge">advanced</span><span class="badge">CDN360 Proprietary</span>
 
-**Syntax**:    origin_send_timeout time; <br/>
-**Default**:    origin_send_timeout 60s; <br/>
+**Syntax**: `origin_send_timeout time;` <br/>
+**Default**: `origin_send_timeout 60s;` <br/>
 **Context**:  http, server, location
 
 This is a wrapper of the [proxy_send_timeout](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_send_timeout) directive. It sets a timeout for transmitting a request to the origin server. The value is limited to an integer in [1,600] followed by ‘s’ OR an integer in [1,10] followed by ‘m’.
