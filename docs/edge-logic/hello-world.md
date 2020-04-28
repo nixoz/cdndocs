@@ -29,7 +29,7 @@ If you use the [API to create the property](http://cdn360doc.quantil.com/apidocs
 } 
 ```
 
-Note: You must enter the entire Edge Logic code in one line following the [JSON string escaping](https://www.freeformatter.com/json-escape.html) syntax. If you configure the acceleration hostname to be [www.testdomain.com](www.testdomain.com) as shown in the JSON above, and then deploy the property to the staging environment, you can use a cURL command to perform a test. The result should resemble the following:
+Note: You must enter the entire Edge Logic code in one line following the [JSON string escaping](https://www.freeformatter.com/json-escape.html) syntax. If you configure the acceleration hostname to be `www.testdomain.com` as shown in the JSON above, and then deploy the property to the staging environment, you can use a cURL command to perform a test. The result should resemble the following:
 
 ```bash
 $ curl -v http://www.testdomain.com/ --resolve www.testdomain.com:80:163.171.228.89
