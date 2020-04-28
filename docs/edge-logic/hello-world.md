@@ -13,7 +13,7 @@ For more information about these two directives, please refer to the NGINX docum
 
 <img src="/docs/resources/images/edge-logic/helloworld.png" alt="hello world" width="500">
 
-If you use the [API to create the property](http://cdn360doc.quantil.com/apidocs/api.html#operation/createProperty), then the following is the complete JSON of the property configuration:
+If you use the [API to create the property](</apidocs#operation/createProperty>), then the following is the complete JSON of the property configuration:
 
 ```testdomain.json :```
 ```json
