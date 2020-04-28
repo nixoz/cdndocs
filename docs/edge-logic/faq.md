@@ -58,9 +58,9 @@ The Chinese Ministry of Industry and Information Technology (MIIT) requires ever
 
 Assuming you have a domain with ICP Beian, perform the following steps to enable local delivery in Mainland China: 
 
-1. Create a [CNAME](http://cdn360doc.quantil.com/apidocs/api.html#operation/createCNAME) with "hasBeian" set to true, and use this CNAME for the domain to be accelerated. This ensures that GSLB will direct traffic of this domain to our servers in Mainland China. 
+1. Create a [CNAME](/apidocs#operation/createCNAME) with "hasBeian" set to true, and use this CNAME for the domain to be accelerated. This ensures that GSLB will direct traffic of this domain to our servers in Mainland China. 
 
-2. Set "hasBeian" to true in the [property](http://cdn360doc.quantil.com/apidocs/api.html#operation/createProperty) of this domain. This ensures the configuration will be deployed to servers in China and that those servers will handle client requests to this domain. 
+2. Set "hasBeian" to true in the [property](/apidocs#operation/createProperty) of this domain. This ensures the configuration will be deployed to servers in China and that those servers will handle client requests to this domain. 
 
 ### How to support websocket?
 
