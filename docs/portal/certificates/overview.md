@@ -1,6 +1,6 @@
 # Managing Certificates
 
-A digital certificate allows your website to exchange data securely over the Internet using the public key infrastructure (PKI). The certificate enables encryption of the information and communications between a website visitor's browser and a website.
+A digital certificate allows your website to exchange data securely over the Internet using the public key infrastructure (PKI). The certificate enables encryption of the communications between a website and its visitors.
 
 ## Certificates Page 
 
