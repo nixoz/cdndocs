@@ -1,49 +1,12 @@
 # Certificate Types
 
-CDN360 supports the following certificates:
-
-- **Certificate**: associates a property hostname with a single name.
-- **Wildcard certificate**: a public key certificate that can be used with multiple sub-domains of a domain. For instance, a certificate for \*.example.com handles www.example.com, mail.example.com, and any subdomain of example.com. If you do not know what property hostnames you want to attach your certificate to, this type of certificate is useful.
+CDN360 supports regular, subject alternative names (SAN) and wildcard certificates. In terms of publick key algorithm, it suports both RSA and ECDSA.
 
 # Creating a New Certificate
 
-All certificates are versioned in CDN360. Once a version is saved, it cannot be changed. However, you can always create a new certificate by uploading it or using the auto-generation feature. In particular, if you downloaded the CSR of a certificate and submit it to a CA, you can upload the CA-signed certificate and chain certificate once you receive them back from the CA.
-
-1. In the left pane, click **Certificates**.
-2. At the top right of the Certificates page, click the **Create New Certificate +** button.
-
-![null](</docs/resources/images/Certificate - Edit Button.png>)
-
-3. Complete the fields in the Create Certificate form. Required fields are denoted by an asterisk (\*).
-
-![null](</docs/resources/images/Create Version Button - Updating properties.png>)
-
-| **Fields**                                                                                                                     | **Description**                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Certificate Name                                                                                                               | Enter a name that helps you identify this certificate.                                                                         |
-| Certificate Description                                                                                                        | Add a description to associate with this certificate.                                                                          |
-| Auto Renew                                                                                                                     | Select whether you want CDN360 to renew the certificate automatically. Choices are:                                            |
-| Share With                                                                                                                     | This field is available to resellers only. It allows resellers to select whether this certificate will be shared. Choices are: |
-| **Upload Certificate Tab**                                                                                                     |                                                                                                                                |
-| Private Key                                                                                                                    | Click this button, browse to the private key you obtained from your CA, and then select it.                                    |
-| Certificate                                                                                                                    | Click this button, browse to the signed key you obtained from your CA, and then select it.                                     |
-| Chain Certificate                                                                                                              | Click this button, browse to the signed key you obtained from your CA, and then select it.                                     |
-| Comments                                                                                                                       | Enter comments about the certificate.                                                                                          |
-| **Auto Generate Certificate Tab**                                                                                              |                                                                                                                                |
-| Cipher type                                                                                                                    | Select a cipher. Choices are:                                                                                                  |
-| Common Name                                                                                                                    | Enter a common name you want to use for the certificate.                                                                       |
-| SAN                                                                                                                            | Enter one or more subject alternative names (SANs).                                                                            |
-| Country                                                                                                                        | Enter the name of a country in two letter [ISO-3166 country code](<https://www.iso.org/obp/ui/#search>) format.                |
-| State                                                                                                                          | Enter the name of a state.                                                                                                     |
-| City                                                                                                                           | Enter the name of a city.                                                                                                      |
-| Street                                                                                                                         | Enter the name of a street.                                                                                                    |
-| Company                                                                                                                        | Enter a company name.                                                                                                          |
-| Department                                                                                                                     | Enter a department name.                                                                                                       |
-| Email                                                                                                                          | Enter an email address.                                                                                                        |
-| Comments                                                                                                                       | Enter comments about the certificate.                                                                                          |
-
-4. When finished, click the **Save Certificate** button and confirm that you want to update this certificate.
-
+There are two ways to create a new certificate: 
+1. Auto-generation of a self-signed certificate. In particular, if you need to apply a certificate from a CA, you can download the CSR of the new self-signed certificate and submit to the CA. Once you receive the CA-signed certificate and chain certificate(s), you can upload them as a new version;
+2. Uploading everything: private key, certificate and chain certificate(s).
 
 # Auto-Generating a Self-Signed Certificate 
 
