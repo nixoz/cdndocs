@@ -5,7 +5,9 @@ CDN360 supports regular, subject alternative names (SAN) and wildcard certificat
 # Creating a New Certificate
 
 There are two ways to create a new certificate: 
+
 1. Auto-generation of a self-signed certificate. In particular, if you need to apply a certificate from a CA, you can download the CSR of the new self-signed certificate and submit to the CA. Once you receive the CA-signed certificate and chain certificate(s), you can upload them as a new version;
+
 2. Uploading everything: private key, certificate and chain certificate(s).
 
 # Auto-Generating a Self-Signed Certificate 
