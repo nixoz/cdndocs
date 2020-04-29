@@ -1,12 +1,10 @@
 # About Properties
 
-A "property" is the configuration of one or more hostnames (domains) that need to be deployed to the proxy servers. One property can have multiple versions.
+A "property" is the configuration of one or more hostnames (domains) that need to be deployed to the CDN360 proxy servers. Properties determine how you want the servers to obtain, manage, and distribute your content to the end users.
 
-Properties determine how you want CDN360 to obtain, manage, and distribute your content to website visitors. Properties are configuration centric and can be applied to different hostnames or domains.
+On the CDN360 platform, property configurations are versioned to support tracking the history of changes and allow rollback if needed.
 
 ## Managing Properties
-
-A property is a set of configurations for delivering your content. Properties determine how you want CDN360 to obtain, manage, and distribute your content to website visitors. Properties are configuration-centric and can be applied to different hostnames or domains.
 
 ### Properties Page
 
