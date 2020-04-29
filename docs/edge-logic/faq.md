@@ -42,14 +42,9 @@ However, preserving a `Vary` header prevents the response from being cached beca
 
 ### How to chase redirections from origin?
 
-When the origin responds with 30x redirection, you may want the CDN servers to chase it until the redirection stops, instead of passing the redirection to the client, which takes more time to get the final content. If you want to turn it on, you just need to include 2 configuration files:
-Add the following line at the top level of the edge logic:
-```nginx
-include ../conf/cs_server_level_follow_redirect.conf;
+When the origin responds with 30x redirection, you may want the CDN servers to chase it until the redirection stops, instead of passing the redirection to the client, which takes more time to get the final content. If you want to turn it on, you just need to do the following:
 ```
-Add the following line in the location block that contains the `origin_pass` directive:
-```nginx
-include ../conf/cs_location_level_follow_redirect.conf;
+TBD
 ```
 
 ### China Delivery and Beian
