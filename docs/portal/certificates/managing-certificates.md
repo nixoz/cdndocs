@@ -1,7 +1,3 @@
-# Certificate Types
-
-CDN360 supports regular, subject alternative names (SAN) and wildcard certificates. In terms of publick key algorithm, it suports both RSA and ECDSA.
-
 # Creating a New Certificate
 
 There are two options to create a new certificate: 
