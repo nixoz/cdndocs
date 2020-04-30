@@ -12,7 +12,7 @@ In particular, if you need a certificate signing request (CSR) to apply for a ce
 
 2. Uploading everything: private key, certificate and chain certificate(s).
 
-# Auto-Generating a Self-Signed Certificate 
+## Auto-Generating a Self-Signed Certificate 
 
 The following procedure describes how to generate self-signed certificates. Self-signed certificates can be used for testing purposes or internal use before deploying the certificate into the production environment. If you need a certificate signing request (CSR) to obtain a signed certificate from a certificate authority (CA), create a self-signed certificate first.
 
@@ -49,7 +49,7 @@ The following procedure describes how to generate self-signed certificates. Self
 
 Your certificate is saved and appears on the Certificates page. You can now use the certificate with any properties you create. You can also download the CSR to apply for a signed certificate from a CA, and then upload it to create a [new version](#updating-expiring-certificates) of this certificate.
 
-# Uploading an Existing Certificate
+## Uploading an Existing Certificate
 
 If you have a certificate with the private key and the CA chain certificate, you can upload them so they can be used by properties. Before performing the following procedure, make sure the certificate and associated files are in:
 
@@ -199,7 +199,7 @@ Deleting a certificate removes that certificate permanently.
 
 # Downloading a CSR
 
-A certificate signing request (CSR) is a file that contains information a certificate authority (CA) needs to create and digitally sign a TLS certificate. If your website uses a CA certificate, you can generate a CSR through CDN360 to test your configuration.
+A certificate signing request (CSR) is a file that contains information a certificate authority (CA) needs to create and digitally sign a TLS certificate. CDN360 allows you to download the CSR that corresponds to the latest version of each certificate. You can send this CSR to apply for a new certificate from a CA and come back to upload the CA-signed certificate as a new version.
 
 **Note**: To download a CSR, the certificate must show **Owned** in the **Ownership** column.
 
