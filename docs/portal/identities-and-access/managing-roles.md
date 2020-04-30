@@ -20,7 +20,7 @@ A role is a collection of one or more permissions that can be performed within t
 |     ---------------- |---------------------------------- |
 | Role Name            | Enter a name for this role.       |
 | Description          | Enter a description for this role.|
-| Permissions          | To assign one or more permissions to this role, click **Add Permissions**, check one or more [permissions]?? from the Add Permissions dialog box, and then click Save. If you decide not to add one or more permissions to this role, check them, and then click the **Delete** button at the top right of the **Permissions** section.|
+| Permissions          | To assign one or more permissions to this role, click **Add Permissions**, check one or more [permissions]?? from the Add Permissions dialog box, and then click **Save**. If you decide not to add one or more permissions to this role, check them, and then click the **Delete** button at the top right of the **Permissions** section.|
 | Users                | To assign users to this role, click **Assign Users**, check one or more users from the Assign Users dialog box, and then click **Assign**. If you decide not to add one or more users to this role, check them, and then click the **Delete** button at the top right of the **Users** section.               |
 
 5. Click **Save**.
@@ -59,17 +59,17 @@ Administrators delete roles from the **Roles** tab on the Identity & Access Mana
 
 <ul><u>OR</u></ul></ul>
 
-<ul><ul><li>To delete more than one role from the Roles page, check each role, and then click **Delete** at the top right of the page.</ul><br>
+<ul><ul><li>To delete more than one role from the Roles page, check each role, and then click <strong>Delete</strong> at the top right of the page.</ul><br>
 
 <ul><u>OR</u></ul></ul>
 
-<ul><ul><li>To see the details of a role before deleting it, click the role name To delete the role, click **Delete** at the top right of the Role Details page.</ul></ul>
+<ul><ul><li>To see the details of a role before deleting it, click the role name To delete the role, click <strong>Delete</strong> at the top right of the Role Details page.</ul></ul>
 
 4. If the role has no assigned users, click **Yes, delete!** to delete the role. If the role has one or more assigned users, click **Un-assign from all users and delete** to delete the role.
 
 ## Permissions That Can Be Assigned to Roles
 
-| **This Permission...**                         | **Allows the Role to...|
+| **This Permission...**                         | Allows the Role to...|
 | ---------------------------------------------- | ---------------------- |
 | certificate.create                             | Create certificates    |
 | certificate.delete                             | Delete certificates    |

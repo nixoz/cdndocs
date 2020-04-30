@@ -16,9 +16,9 @@ The following figure shows the key elements on the page, and the table following
 
 ![null](</docs/resources/images/Properties Page.png>)
 
-| **Fields** | **Description** |
-| :----------: | --------------- |
-| 1 | To filter properties, type characters in this field and then press the Enter key. All properties that do not contain the typed characters are hidden. Filtering is not case-sensitive. To remove the filter, click the **x** icon at the right side of the search field. |
-| 2 | Each property appears on its own row. |
-| 3 | The **Actions** drop-down list on each row has options to [edit a property](editing-properties.md), [compare property versions](comparing-properties.md), [undeploy a property](undeploying-property.md) from a staging or production environment, and [delete a property](deleting-property.md). |
-| 4 | The **Create Property** button allows you to [create](creating-property.md) new properties.|
+| **Fields**   | **Description**                                                                           |
+| :----------: | ----------------------------------------------------------------------------------------- |
+| 1            | To filter properties, type characters in this field and then press the Enter key. All properties that do not contain the typed characters are hidden. Filtering is not case-sensitive. To remove the filter, click the **x** icon at the right side of the search field.                                    |
+| 2 | Each property appears on its own row.                                                                |
+| 3 | The **Actions** drop-down list on each row has options to [edit a property](</docs/portal/properties/editing-properties.md>), [compare property versions](</docs/portal/properties/comparing-properties.md>), [undeploy a property](</docs/portal/properties/undeploying-property.md>) from a staging or production environment, and [delete a property](</docs/portal/properties/deleting-property.md>).                      |
+| 4 | The **Create Property** button allows you to [create](</docs/portal/properties/creating-property.md>) new properties.                                                                                            |

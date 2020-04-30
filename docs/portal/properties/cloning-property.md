@@ -15,16 +15,16 @@ After a property version has been deployed to staging or production, it is locke
 
 4. The cloned property inherits the following fields from the original property. Change them as required. Required fields are denoted by an asterisk (\*).
 
-| **Fields** | **Description** |
-| ---------- | --------------- |
-| Version Number | Read-only field that shows the version number of this property.
-| Description | Add a description to associate with this property.|
-| Hostnames | Enter one or more hostnames that website visitors access for your content.|
-| Origins | Origins are your web servers that CDN360 accesses to fetch your content. To [add origins](managing-origins.md), click the **Add Origin To List** link, or click the **Edit** link to [edit the origin server(s)](managing-origins.md) shown or the **Delete** link to [delete them](managing-origins.md). |
-| Edge Logic | Change the server configuration that defines how CDN360 delivers content to website visitors. For more information, refer to [CDNetworks' Edge Logic documentation](https://docs.google.com/document/d/119Lpq__vF8di1y2-A8ANeUsmyiw-T8ppp5J745oCrWk/edit).|
-| TLS Settings | Select the [TLS client certificate settings](??) for your property.|
-| Real Time Logging | If this advanced feature was enabled for you, complete the [real-time logging parameters](??). If you require this feature, contact CDNetworks.|
-| Advanced Settings | Use [Advanced Settings](advanced-settings.md) to determine how content is cached, whether your website can be accessed from China, and whether a load balancer hash key should be used.                      
+| **Fields**              | **Description**                                      |
+| ----------------------- | ---------------------------------------------------- |
+| Version Number          | Read-only field that shows the version number of this property.                                                                        |
+| Description             | Add a description to associate with this property.   |
+| Hostnames               | Enter one or more hostnames that website visitors access for your content.                                                         |
+| Origins                 | Origins are your web servers that CDN360 accesses to fetch your content. Click the links to [add, edit, or delete origins](</docs/portal/properties/managing-origins.md>).                                         |
+| Edge Logic              | Change the server configuration that defines how CDN360 delivers content to website visitors. For more information, refer to [CDNetworks' Edge Logic documentation](</docs/edge-logic/intro.md>).             |
+| TLS Settings | Select the [TLS client certificate settings]?? for your property.|
+| Real Time Logging | If this advanced feature was enabled for you, complete the [real-time logging parameters]??. If you require this feature, contact CDNetworks.                                                                      |
+| Advanced Settings | Use [Advanced Settings](</docs/portal/properties/advanced-settings.md>) to determine how content is cached, whether your website can be accessed from China, and whether a load balancer hash key should be used.                                                                            |
 
 
 5. Click the **Save** button to save the cloned property. To validate the saved property at a later time, display the [Edit Property](</docs/portal/properties/editing-properties.md>) form, and then click the **Save & Validate** button in the Edit Property form.

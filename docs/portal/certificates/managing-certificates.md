@@ -22,20 +22,20 @@ All certificates are versioned in CDN360. Once a version is saved, it cannot be 
 | ------------------------ | ------------------------------------------ |
 | Certificate Name         | Enter a name for the certificate.          |
 | Certificate Description  | Enter a description for the certificate.   |
-| Auto Renew               | Select whether you want CDN360 to renew the certificate automatically. Choices are:<br><ul><li><strong>Let's Encrypt</strong></strong> = when the certificate is close to expiring, CDN360 renews it automatically using the [Let’s Encrypt HTTP01 challenge](https://letsencrypt.org/docs/challenge-types/). To use this option, see [Auto-Renewing a Certificate through Let's Encrypt](auto-renewal.md).<br><strong>Off</strong> = CDN360 does not renew the certificate automatically. (*default*)
+| Auto Renew               | Select whether you want CDN360 to renew the certificate automatically. Choices are:<br><ul><li><strong>Let's Encrypt</strong></strong> = when the certificate is close to expiring, CDN360 renews it automatically using the [Let’s Encrypt HTTP01 challenge](<https://letsencrypt.org/docs/challenge-types/>). To use this option, see [Auto-Renewing a Certificate through Let's Encrypt](<docs/portal/certificates/../../../auto-renewal.md>).<br><strong>Off</strong> = CDN360 does not renew the certificate automatically. (*default*)
 | Share With   | This field is available to resellers only. It allows resellers to select whether this certificate will be shared. Choices are: <br><ul><li><strong>None</strong> = certificate is not shared.<br><strong>All child customers</strong> = certificate is shared with all child customers.<br><strong>The following child customers</strong> = certificate is shared with the child customers you select.                             |
-| **Upload Certificate Tab**   |
-| Private Key             | Click **Upload**, browse to the private key you obtained from your CA, and then select it.                              |
-| Certificate             | Click **Upload**, browse to the signed key you obtained from your CA, and then select it.                              |
-| Chain Certificate              | Click **Upload**, browse to the signed key you obtained from your CA, and then select it.                              |
+| **Upload Certificate Tab**                                           ||
+| Private Key             | Click **Upload**, browse to the private key you obtained from your CA, and then select it.                                            |
+| Certificate             | Click **Upload**, browse to the signed key you obtained from your CA, and then select it.                                            |
+| Chain Certificate              | Click **Upload**, browse to the signed key you obtained from your CA, and then select it.                                       |
 | Comments                | Enter comments about the certificate.       |
-| **Auto Generate Certificate Tab**   |
-| Cipher Type             |  Select a cipher type. Choices are:<br><ul><li><strong>RSA2048</strong>.<br><li><strong>ECC256</strong>.                              |
-| Common Name             | Enter a common name you want to use for the certificate.                              |
-| SAN                     | Enter one or more subject alternative names (SANs).                         |
-| Country                 | Enter the name of a country in two letter [ISO-3166 country code](https://www.iso.org/obp/ui/#search) format.               |
-| State                 | Enter the name of a country in two letter ISO-3166 country code format.      |
-| City                 | Enter the name of a city.                      |
+| **Auto Generate Certificate Tab**                                    |    |
+| Cipher Type             |  Select a cipher type. Choices are:<br><ul><li><strong>RSA2048</strong>.<br><li><strong>ECC256</strong>.                                |
+| Common Name             | Enter a common name you want to use for the certificate.                                                            |
+| SAN                     | Enter one or more subject alternative names (SANs).   |
+| Country                 | Enter the name of a country in two letter [ISO-3166 country code](<https://www.iso.org/obp/ui/#search>) format.               |
+| State                   | Enter the name of a country in two letter ISO-3166 country code format.      |
+| City                    | Enter the name of a city.                   |
 | Street                  | Enter the name of a street.                 |
 | Company                 | Enter a company name.                       |
 | Department              | Enter a department name.                    |
@@ -138,11 +138,11 @@ An expired certificate causes browsers to stop loading web content and display a
 
 ## Deploying and Undeploying Certificates
 
-After you create a certificate, you can [deploy](#deploying-certificates) it to the staging environment for testing, and then to the CDN360 production environment if testing is successful.
+After you create a certificate, you can deploy it to the staging environment for testing, and then to the CDN360 production environment if testing is successful.
 
 **Important**: You must deploy the certificate for a property to use it.
 
-If you decide not to use a deployed certificate, you can [undeploy](#undeploying-certificates) it from the staging and production environments.
+If you decide not to use a deployed certificate, you can undeploy it from the staging and production environments.
 
 ### Deploying Certificates
 
@@ -177,7 +177,7 @@ Deleting a certificate removes that certificate permanently.
 **Note**: To delete a certificate, the certificate must show **Owned** in the **Ownership** column.
 
 1. In the left pane, click **Certificates**.
-2. On the Certificates page, click the **Actions **drop-down list of the certificate you want to delete, and then select **Delete**.
+2. On the Certificates page, click the **Actions** drop-down list of the certificate you want to delete, and then select **Delete**.
 3. When prompted to confirm the deletion, click **OK** to delete the certificate. 
 
 ## Downloading a CSR

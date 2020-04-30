@@ -12,12 +12,12 @@ The following figure shows the key elements on the page.
 
 The following report types are supported:
 
-| **Report** | **Description** |
-| ---------- | --------------- |
-| Traffic Volume | Shows edge versus origin traffic. |
-| Traffic Bandwidth | Shows edge versus origin traffic bandwidth. Lines represent edge traffic from CDN360 servers, traffic from your origin servers, and cache hit rate. The vertical (Y) axis shows the bandwidth and hit ratio, while the horizontal (X) axis shows time. The cache hit rate is computed as (edge traffic - origin traffic) / edge traffic. |
-| Requests | Shows requests made to the files of your property. Lines show the requests to CDN360 edge servers, requests to your origin servers, and cache hit rate. The cache hit rate is computed as (edge requests - origin requests)/edge requests. |
-| Status Code Details | Shows the percentage of HTTP status codes returned. For example, code 200 represents a successful request. |
+| **Report**            | **Description**                                                   |
+| --------------------- | ----------------------------------------------------------------- |
+| Traffic Volume        | Shows edge versus origin traffic.                                 |
+| Traffic Bandwidth     | Shows edge versus origin traffic bandwidth. Lines represent edge traffic from CDN360 servers, traffic from your origin servers, and cache hit rate. The vertical (Y) axis shows the bandwidth and hit ratio, while the horizontal (X) axis shows time. The cache hit rate is computed as (edge traffic - origin traffic) / edge traffic.     |
+| Requests              | Shows requests made to the files of your property. Lines show the requests to CDN360 edge servers, requests to your origin servers, and cache hit rate. The cache hit rate is computed as (edge requests - origin requests)/edge requests.              |
+| Status Code Details   | Shows the percentage of HTTP status codes returned. For example, code 200 represents a successful request.                                                   |
 
 ## Generating Reports
 
@@ -29,7 +29,7 @@ The following report types are supported:
 | **Fields**      | **Description**                                       |
 | --------------- | ----------------------------------------------------- |
 | Report Type     | Select the type of report you want to generate.       | 
-| Hostnames       | Select one or more hostnames that you defined when you created your property.                                                    |
+| Hostnames       | Select one or more hostnames that you defined when you created your property.                                                                    |
 | Date Range      | Select the start and end dates and the time for the report.                                                                   |
 | Report Interval | Select the granularity of the returned data. Choices are: <li><strong>5 minutes</strong>. *(default)*<li><strong>1 Hour</strong>.<br><li><strong>1 Day</strong>.<li><strong>1 Month.</li></br>
 | Protocol        | Select the protocol-based data traffic that will be covered by the report. Choices are: <li><strong>All</strong> = use  HTTP and HTTPS. *(default)*<li><strong>HTTP</strong> = use HTTP only.<br><li><strong>HTTPS</strong> = use HTTPS only.         | 

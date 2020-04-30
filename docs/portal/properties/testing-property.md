@@ -24,7 +24,7 @@ There are multiple ways to send test traffic to the staging environment:
 ```
 faster.mydomain.com CNAME staging.qtlgslb.com
 ```
-- Modify the ```/etc/hosts``` file to hard code the hostname to be accelerated to one of the staging servers IP addresses. For example:
+- Modify the ```/etc/hosts``` file to hard code the hostname to be accelerated to one of the staging servers IP addresses (refer to the [CDN360 API](</apidocs#tag/Property-Validation>)). For example:
 
 ```
 163.171.233.53 faster.mydomain.com
@@ -35,7 +35,7 @@ faster.mydomain.com CNAME staging.qtlgslb.com
 $ curl -v https://faster.mydomain.com/index.html --resolve faster.mydomain.com:443:163.171.233.53
 ```
 
-## Testing Your Property In Production
+## Testing Your Property in Production
 
 After you create a CNAME and set your DNS server to point the CNAME to your property's hostname, you can browse your content under the hostname.
 
